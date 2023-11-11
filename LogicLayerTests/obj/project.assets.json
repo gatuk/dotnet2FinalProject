@@ -4085,24 +4085,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\egish\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Samar\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\egish\\source\\repos\\2023dotnet2Project\\FlightPlanner\\LogicLayerTests\\LogicLayerTests.csproj",
+      "projectUniqueName": "D:\\Awaab\\Kirkwood\\Tutor\\Dotnet2\\Gishe\\dotnet2FinalProject\\LogicLayerTests\\LogicLayerTests.csproj",
       "projectName": "LogicLayerTests",
-      "projectPath": "C:\\Users\\egish\\source\\repos\\2023dotnet2Project\\FlightPlanner\\LogicLayerTests\\LogicLayerTests.csproj",
-      "packagesPath": "C:\\Users\\egish\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\egish\\source\\repos\\2023dotnet2Project\\FlightPlanner\\LogicLayerTests\\obj\\",
+      "projectPath": "D:\\Awaab\\Kirkwood\\Tutor\\Dotnet2\\Gishe\\dotnet2FinalProject\\LogicLayerTests\\LogicLayerTests.csproj",
+      "packagesPath": "C:\\Users\\Samar\\.nuget\\packages\\",
+      "outputPath": "D:\\Awaab\\Kirkwood\\Tutor\\Dotnet2\\Gishe\\dotnet2FinalProject\\LogicLayerTests\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\egish\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Samar\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4116,17 +4111,17 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\egish\\source\\repos\\2023dotnet2Project\\FlightPlanner\\DataAccessFake\\DataAccessFake.csproj": {
-              "projectPath": "C:\\Users\\egish\\source\\repos\\2023dotnet2Project\\FlightPlanner\\DataAccessFake\\DataAccessFake.csproj"
+            "D:\\Awaab\\Kirkwood\\Tutor\\Dotnet2\\Gishe\\dotnet2FinalProject\\DataAccessFake\\DataAccessFake.csproj": {
+              "projectPath": "D:\\Awaab\\Kirkwood\\Tutor\\Dotnet2\\Gishe\\dotnet2FinalProject\\DataAccessFake\\DataAccessFake.csproj"
             },
-            "C:\\Users\\egish\\source\\repos\\2023dotnet2Project\\FlightPlanner\\DataObjectLayer\\DataObjects.csproj": {
-              "projectPath": "C:\\Users\\egish\\source\\repos\\2023dotnet2Project\\FlightPlanner\\DataObjectLayer\\DataObjects.csproj"
+            "D:\\Awaab\\Kirkwood\\Tutor\\Dotnet2\\Gishe\\dotnet2FinalProject\\DataObjectLayer\\DataObjects.csproj": {
+              "projectPath": "D:\\Awaab\\Kirkwood\\Tutor\\Dotnet2\\Gishe\\dotnet2FinalProject\\DataObjectLayer\\DataObjects.csproj"
             },
-            "C:\\Users\\egish\\source\\repos\\2023dotnet2Project\\FlightPlanner\\IDataAccessLayer\\DataAccessInterfaces.csproj": {
-              "projectPath": "C:\\Users\\egish\\source\\repos\\2023dotnet2Project\\FlightPlanner\\IDataAccessLayer\\DataAccessInterfaces.csproj"
+            "D:\\Awaab\\Kirkwood\\Tutor\\Dotnet2\\Gishe\\dotnet2FinalProject\\IDataAccessLayer\\DataAccessInterfaces.csproj": {
+              "projectPath": "D:\\Awaab\\Kirkwood\\Tutor\\Dotnet2\\Gishe\\dotnet2FinalProject\\IDataAccessLayer\\DataAccessInterfaces.csproj"
             },
-            "C:\\Users\\egish\\source\\repos\\2023dotnet2Project\\FlightPlanner\\LogicLayer\\LogicLayer.csproj": {
-              "projectPath": "C:\\Users\\egish\\source\\repos\\2023dotnet2Project\\FlightPlanner\\LogicLayer\\LogicLayer.csproj"
+            "D:\\Awaab\\Kirkwood\\Tutor\\Dotnet2\\Gishe\\dotnet2FinalProject\\LogicLayer\\LogicLayer.csproj": {
+              "projectPath": "D:\\Awaab\\Kirkwood\\Tutor\\Dotnet2\\Gishe\\dotnet2FinalProject\\LogicLayer\\LogicLayer.csproj"
             }
           }
         }
@@ -4178,7 +4173,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.1.23455.8\\RuntimeIdentifierGraph.json"
       }
     }
   }

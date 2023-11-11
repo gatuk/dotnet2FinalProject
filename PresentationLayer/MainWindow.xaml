@@ -8,17 +8,16 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
+            <RowDefinition Height="80"/>
+            <RowDefinition/>
+            <RowDefinition Height="80"/>
         </Grid.RowDefinitions>
 
         <Grid Grid.Row="0" Name="Header">
-
             <Grid.ColumnDefinitions>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
 
             </Grid.ColumnDefinitions>
             <Grid Grid.Column="0"> <!--logo -->
