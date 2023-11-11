@@ -1,0 +1,17 @@
+C:\Users\egish\source\repos\FlightPlanner\DataAccessFake\bin\Debug\net6.0\DataAccessFake.deps.json
+C:\Users\egish\source\repos\FlightPlanner\DataAccessFake\bin\Debug\net6.0\DataAccessFake.dll
+C:\Users\egish\source\repos\FlightPlanner\DataAccessFake\bin\Debug\net6.0\DataAccessFake.pdb
+C:\Users\egish\source\repos\FlightPlanner\DataAccessFake\bin\Debug\net6.0\DataObjectLayer.dll
+C:\Users\egish\source\repos\FlightPlanner\DataAccessFake\bin\Debug\net6.0\IDataAccessLayer.dll
+C:\Users\egish\source\repos\FlightPlanner\DataAccessFake\bin\Debug\net6.0\DataObjectLayer.pdb
+C:\Users\egish\source\repos\FlightPlanner\DataAccessFake\bin\Debug\net6.0\IDataAccessLayer.pdb
+C:\Users\egish\source\repos\FlightPlanner\DataAccessFake\obj\Debug\net6.0\DataAccessFake.csproj.AssemblyReference.cache
+C:\Users\egish\source\repos\FlightPlanner\DataAccessFake\obj\Debug\net6.0\DataAccessFake.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\egish\source\repos\FlightPlanner\DataAccessFake\obj\Debug\net6.0\DataAccessFake.AssemblyInfoInputs.cache
+C:\Users\egish\source\repos\FlightPlanner\DataAccessFake\obj\Debug\net6.0\DataAccessFake.AssemblyInfo.cs
+C:\Users\egish\source\repos\FlightPlanner\DataAccessFake\obj\Debug\net6.0\DataAccessFake.csproj.CoreCompileInputs.cache
+C:\Users\egish\source\repos\FlightPlanner\DataAccessFake\obj\Debug\net6.0\DataAccessFake.csproj.CopyComplete
+C:\Users\egish\source\repos\FlightPlanner\DataAccessFake\obj\Debug\net6.0\DataAccessFake.dll
+C:\Users\egish\source\repos\FlightPlanner\DataAccessFake\obj\Debug\net6.0\refint\DataAccessFake.dll
+C:\Users\egish\source\repos\FlightPlanner\DataAccessFake\obj\Debug\net6.0\DataAccessFake.pdb
+C:\Users\egish\source\repos\FlightPlanner\DataAccessFake\obj\Debug\net6.0\ref\DataAccessFake.dll

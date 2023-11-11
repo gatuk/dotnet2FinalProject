@@ -1,0 +1,11 @@
+C:\Users\egish\source\repos\FlightPlanner\DataObjectLayer\bin\Debug\net6.0\DataObjectLayer.deps.json
+C:\Users\egish\source\repos\FlightPlanner\DataObjectLayer\bin\Debug\net6.0\DataObjectLayer.dll
+C:\Users\egish\source\repos\FlightPlanner\DataObjectLayer\bin\Debug\net6.0\DataObjectLayer.pdb
+C:\Users\egish\source\repos\FlightPlanner\DataObjectLayer\obj\Debug\net6.0\DataObjectLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\egish\source\repos\FlightPlanner\DataObjectLayer\obj\Debug\net6.0\DataObjectLayer.AssemblyInfoInputs.cache
+C:\Users\egish\source\repos\FlightPlanner\DataObjectLayer\obj\Debug\net6.0\DataObjectLayer.AssemblyInfo.cs
+C:\Users\egish\source\repos\FlightPlanner\DataObjectLayer\obj\Debug\net6.0\DataObjectLayer.csproj.CoreCompileInputs.cache
+C:\Users\egish\source\repos\FlightPlanner\DataObjectLayer\obj\Debug\net6.0\DataObjectLayer.dll
+C:\Users\egish\source\repos\FlightPlanner\DataObjectLayer\obj\Debug\net6.0\refint\DataObjectLayer.dll
+C:\Users\egish\source\repos\FlightPlanner\DataObjectLayer\obj\Debug\net6.0\DataObjectLayer.pdb
+C:\Users\egish\source\repos\FlightPlanner\DataObjectLayer\obj\Debug\net6.0\ref\DataObjectLayer.dll

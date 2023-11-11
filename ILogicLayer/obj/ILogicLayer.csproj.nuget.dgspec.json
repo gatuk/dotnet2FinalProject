@@ -1,0 +1,265 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\egish\\source\\repos\\FlightPlanner\\ILogicLayer\\ILogicLayer.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\egish\\source\\repos\\FlightPlanner\\DataAccessLayer\\DataAccessLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\egish\\source\\repos\\FlightPlanner\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectName": "DataAccessLayer",
+        "projectPath": "C:\\Users\\egish\\source\\repos\\FlightPlanner\\DataAccessLayer\\DataAccessLayer.csproj",
+        "packagesPath": "C:\\Users\\egish\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\egish\\source\\repos\\FlightPlanner\\DataAccessLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\egish\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\egish\\source\\repos\\FlightPlanner\\DataObjectLayer\\DataObjects.csproj": {
+                "projectPath": "C:\\Users\\egish\\source\\repos\\FlightPlanner\\DataObjectLayer\\DataObjects.csproj"
+              },
+              "C:\\Users\\egish\\source\\repos\\FlightPlanner\\IDataAccessLayer\\DataAccessInterfaces.csproj": {
+                "projectPath": "C:\\Users\\egish\\source\\repos\\FlightPlanner\\IDataAccessLayer\\DataAccessInterfaces.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\egish\\source\\repos\\FlightPlanner\\DataObjectLayer\\DataObjects.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\egish\\source\\repos\\FlightPlanner\\DataObjectLayer\\DataObjects.csproj",
+        "projectName": "DataObjects",
+        "projectPath": "C:\\Users\\egish\\source\\repos\\FlightPlanner\\DataObjectLayer\\DataObjects.csproj",
+        "packagesPath": "C:\\Users\\egish\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\egish\\source\\repos\\FlightPlanner\\DataObjectLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\egish\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\egish\\source\\repos\\FlightPlanner\\IDataAccessLayer\\DataAccessInterfaces.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\egish\\source\\repos\\FlightPlanner\\IDataAccessLayer\\DataAccessInterfaces.csproj",
+        "projectName": "DataAccessInterfaces",
+        "projectPath": "C:\\Users\\egish\\source\\repos\\FlightPlanner\\IDataAccessLayer\\DataAccessInterfaces.csproj",
+        "packagesPath": "C:\\Users\\egish\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\egish\\source\\repos\\FlightPlanner\\IDataAccessLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\egish\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\egish\\source\\repos\\FlightPlanner\\DataObjectLayer\\DataObjects.csproj": {
+                "projectPath": "C:\\Users\\egish\\source\\repos\\FlightPlanner\\DataObjectLayer\\DataObjects.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\egish\\source\\repos\\FlightPlanner\\ILogicLayer\\ILogicLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\egish\\source\\repos\\FlightPlanner\\ILogicLayer\\ILogicLayer.csproj",
+        "projectName": "ILogicLayer",
+        "projectPath": "C:\\Users\\egish\\source\\repos\\FlightPlanner\\ILogicLayer\\ILogicLayer.csproj",
+        "packagesPath": "C:\\Users\\egish\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\egish\\source\\repos\\FlightPlanner\\ILogicLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\egish\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\egish\\source\\repos\\FlightPlanner\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "C:\\Users\\egish\\source\\repos\\FlightPlanner\\DataAccessLayer\\DataAccessLayer.csproj"
+              },
+              "C:\\Users\\egish\\source\\repos\\FlightPlanner\\DataObjectLayer\\DataObjects.csproj": {
+                "projectPath": "C:\\Users\\egish\\source\\repos\\FlightPlanner\\DataObjectLayer\\DataObjects.csproj"
+              },
+              "C:\\Users\\egish\\source\\repos\\FlightPlanner\\IDataAccessLayer\\DataAccessInterfaces.csproj": {
+                "projectPath": "C:\\Users\\egish\\source\\repos\\FlightPlanner\\IDataAccessLayer\\DataAccessInterfaces.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+C:\Users\egish\source\repos\FlightPlanner\IDataAccessLayer\bin\Debug\net6.0\IDataAccessLayer.deps.json
+C:\Users\egish\source\repos\FlightPlanner\IDataAccessLayer\bin\Debug\net6.0\IDataAccessLayer.dll
+C:\Users\egish\source\repos\FlightPlanner\IDataAccessLayer\bin\Debug\net6.0\IDataAccessLayer.pdb
+C:\Users\egish\source\repos\FlightPlanner\IDataAccessLayer\bin\Debug\net6.0\DataObjectLayer.dll
+C:\Users\egish\source\repos\FlightPlanner\IDataAccessLayer\bin\Debug\net6.0\DataObjectLayer.pdb
+C:\Users\egish\source\repos\FlightPlanner\IDataAccessLayer\obj\Debug\net6.0\IDataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\egish\source\repos\FlightPlanner\IDataAccessLayer\obj\Debug\net6.0\IDataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\egish\source\repos\FlightPlanner\IDataAccessLayer\obj\Debug\net6.0\IDataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\egish\source\repos\FlightPlanner\IDataAccessLayer\obj\Debug\net6.0\IDataAccessLayer.AssemblyInfo.cs
+C:\Users\egish\source\repos\FlightPlanner\IDataAccessLayer\obj\Debug\net6.0\IDataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\egish\source\repos\FlightPlanner\IDataAccessLayer\obj\Debug\net6.0\IDataAccessLayer.csproj.CopyComplete
+C:\Users\egish\source\repos\FlightPlanner\IDataAccessLayer\obj\Debug\net6.0\IDataAccessLayer.dll
+C:\Users\egish\source\repos\FlightPlanner\IDataAccessLayer\obj\Debug\net6.0\refint\IDataAccessLayer.dll
+C:\Users\egish\source\repos\FlightPlanner\IDataAccessLayer\obj\Debug\net6.0\IDataAccessLayer.pdb
+C:\Users\egish\source\repos\FlightPlanner\IDataAccessLayer\obj\Debug\net6.0\ref\IDataAccessLayer.dll

@@ -1,0 +1,96 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "PresentationLayer/1.0.0": {
+        "dependencies": {
+          "DataObjectLayer": "1.0.0",
+          "ILogicLayer": "1.0.0",
+          "LogicLayer": "1.0.0"
+        },
+        "runtime": {
+          "PresentationLayer.dll": {}
+        }
+      },
+      "DataAccessLayer/1.0.0": {
+        "dependencies": {
+          "DataObjectLayer": "1.0.0",
+          "IDataAccessLayer": "1.0.0"
+        },
+        "runtime": {
+          "DataAccessLayer.dll": {}
+        }
+      },
+      "DataObjectLayer/1.0.0": {
+        "runtime": {
+          "DataObjectLayer.dll": {}
+        }
+      },
+      "IDataAccessLayer/1.0.0": {
+        "dependencies": {
+          "DataObjectLayer": "1.0.0"
+        },
+        "runtime": {
+          "IDataAccessLayer.dll": {}
+        }
+      },
+      "ILogicLayer/1.0.0": {
+        "dependencies": {
+          "DataAccessLayer": "1.0.0",
+          "DataObjectLayer": "1.0.0",
+          "IDataAccessLayer": "1.0.0"
+        },
+        "runtime": {
+          "ILogicLayer.dll": {}
+        }
+      },
+      "LogicLayer/1.0.0": {
+        "dependencies": {
+          "DataAccessLayer": "1.0.0",
+          "DataObjectLayer": "1.0.0",
+          "IDataAccessLayer": "1.0.0",
+          "ILogicLayer": "1.0.0"
+        },
+        "runtime": {
+          "LogicLayer.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PresentationLayer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DataAccessLayer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DataObjectLayer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "IDataAccessLayer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ILogicLayer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LogicLayer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
