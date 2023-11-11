@@ -1,7 +1,9 @@
-﻿namespace DataAccessLayer
+﻿using DataAccessInterfaces;
+
+namespace DataAccessLayer
 {
-  internal class PassengerAccessor : IPassengerAccessor
-  {
+  public class PassengerAccessor : IPassengerAccessor
+    {
 
   }
 }

@@ -1,4 +1,6 @@
-﻿namespace DataAccessLayer
+﻿using System.Data.SqlClient;
+
+namespace DataAccessLayer
 {
   internal static class SqlConnectionProvider
   {

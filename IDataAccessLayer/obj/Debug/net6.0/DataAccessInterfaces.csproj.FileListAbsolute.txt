@@ -1,0 +1,16 @@
+D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\IDataAccessLayer\bin\Debug\net6.0\DataAccessInterfaces.deps.json
+D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\IDataAccessLayer\bin\Debug\net6.0\DataAccessInterfaces.dll
+D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\IDataAccessLayer\bin\Debug\net6.0\DataAccessInterfaces.pdb
+D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\IDataAccessLayer\bin\Debug\net6.0\DataObjects.dll
+D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\IDataAccessLayer\bin\Debug\net6.0\DataObjects.pdb
+D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\IDataAccessLayer\obj\Debug\net6.0\DataAccessInterfaces.csproj.AssemblyReference.cache
+D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\IDataAccessLayer\obj\Debug\net6.0\DataAccessInterfaces.GeneratedMSBuildEditorConfig.editorconfig
+D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\IDataAccessLayer\obj\Debug\net6.0\DataAccessInterfaces.AssemblyInfoInputs.cache
+D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\IDataAccessLayer\obj\Debug\net6.0\DataAccessInterfaces.AssemblyInfo.cs
+D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\IDataAccessLayer\obj\Debug\net6.0\DataAccessInterfaces.csproj.CoreCompileInputs.cache
+D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\IDataAccessLayer\obj\Debug\net6.0\DataAccessInterfaces.sourcelink.json
+D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\IDataAccessLayer\obj\Debug\net6.0\DataAccessInterfaces.csproj.CopyComplete
+D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\IDataAccessLayer\obj\Debug\net6.0\DataAccessInterfaces.dll
+D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\IDataAccessLayer\obj\Debug\net6.0\refint\DataAccessInterfaces.dll
+D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\IDataAccessLayer\obj\Debug\net6.0\DataAccessInterfaces.pdb
+D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\IDataAccessLayer\obj\Debug\net6.0\ref\DataAccessInterfaces.dll
