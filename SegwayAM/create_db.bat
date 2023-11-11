@@ -1,7 +1,7 @@
 ECHO off
 
-sqlcmd -S localhost -E -i segwaydbam.sql
-
+rem sqlcmd -S localhost -E -i segwaydbam.sql
+sqlcmd -S localhost -E -i Northwind.sql
 rem server is localhost
 
 ECHO .
