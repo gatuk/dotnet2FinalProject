@@ -365,6 +365,63 @@
           }
         }
       },
+      "MSTest.TestFramework/3.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Microsoft.VisualStudio.TestPlatform.TestFramework.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.VisualStudio.TestPlatform.TestFramework.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net6.0/cs/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/net6.0/de/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net6.0/es/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net6.0/fr/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net6.0/it/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net6.0/ja/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net6.0/ko/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net6.0/pl/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/net6.0/pt-BR/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net6.0/ru/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net6.0/tr/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net6.0/zh-Hans/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/net6.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        },
+        "build": {
+          "build/net6.0/MSTest.TestFramework.targets": {}
+        }
+      },
       "NETStandard.Library/2.0.0": {
         "type": "package",
         "dependencies": {
@@ -1110,7 +1167,7 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
-      "DataAccessFake/1.0.0": {
+      "DataAccessFakes/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
@@ -1118,10 +1175,10 @@
           "DataObjects": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/DataAccessFake.dll": {}
+          "bin/placeholder/DataAccessFakes.dll": {}
         },
         "runtime": {
-          "bin/placeholder/DataAccessFake.dll": {}
+          "bin/placeholder/DataAccessFakes.dll": {}
         }
       },
       "DataAccessInterfaces/1.0.0": {
@@ -1166,7 +1223,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "DataAccessFake": "1.0.0",
+          "DataAccessFakes": "1.0.0",
           "DataAccessInterfaces": "1.0.0",
           "DataAccessLayer": "1.0.0",
           "DataObjects": "1.0.0",
@@ -1953,6 +2010,106 @@
         "runtimes/win/lib/netstandard2.0/Microsoft.Win32.Registry.xml",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "MSTest.TestFramework/3.1.1": {
+      "sha512": "3rjkGxciNHHmPW8cl1/QVIYjOpfptjmAH5JrLBw+dnMTYDoweg3I579N7OIbar3Zd3q9dfWFrCy2LEV/AmPn3A==",
+      "type": "package",
+      "path": "mstest.testframework/3.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "build/net6.0/MSTest.TestFramework.targets",
+        "build/net6.0/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll",
+        "build/net6.0/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml",
+        "build/net6.0/winui/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll",
+        "build/net6.0/winui/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml",
+        "lib/net462/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll",
+        "lib/net462/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml",
+        "lib/net462/Microsoft.VisualStudio.TestPlatform.TestFramework.dll",
+        "lib/net462/Microsoft.VisualStudio.TestPlatform.TestFramework.xml",
+        "lib/net462/cs/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/net462/de/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/net462/es/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/net462/fr/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/net462/it/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/net462/ja/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/net462/ko/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/net462/pl/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/net462/pt-BR/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/net462/ru/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/net462/tr/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/net462/zh-Hans/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/net462/zh-Hant/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/net6.0/Microsoft.VisualStudio.TestPlatform.TestFramework.dll",
+        "lib/net6.0/Microsoft.VisualStudio.TestPlatform.TestFramework.xml",
+        "lib/net6.0/cs/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/net6.0/de/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/net6.0/es/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/net6.0/fr/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/net6.0/it/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/net6.0/ja/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/net6.0/ko/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/net6.0/pl/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/net6.0/pt-BR/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/net6.0/ru/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/net6.0/tr/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/net6.0/zh-Hans/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/net6.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/netcoreapp3.1/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll",
+        "lib/netcoreapp3.1/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml",
+        "lib/netcoreapp3.1/Microsoft.VisualStudio.TestPlatform.TestFramework.dll",
+        "lib/netcoreapp3.1/Microsoft.VisualStudio.TestPlatform.TestFramework.xml",
+        "lib/netcoreapp3.1/cs/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/netcoreapp3.1/de/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/netcoreapp3.1/es/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/netcoreapp3.1/fr/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/netcoreapp3.1/it/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/netcoreapp3.1/ja/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/netcoreapp3.1/ko/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/netcoreapp3.1/pl/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/netcoreapp3.1/pt-BR/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/netcoreapp3.1/ru/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/netcoreapp3.1/tr/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/netcoreapp3.1/zh-Hans/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/netcoreapp3.1/zh-Hant/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/netstandard2.0/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll",
+        "lib/netstandard2.0/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml",
+        "lib/netstandard2.0/Microsoft.VisualStudio.TestPlatform.TestFramework.dll",
+        "lib/netstandard2.0/Microsoft.VisualStudio.TestPlatform.TestFramework.xml",
+        "lib/netstandard2.0/cs/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/netstandard2.0/de/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/netstandard2.0/es/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/netstandard2.0/fr/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/netstandard2.0/it/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/netstandard2.0/ja/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/netstandard2.0/ko/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/netstandard2.0/pl/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/netstandard2.0/pt-BR/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/netstandard2.0/ru/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/netstandard2.0/tr/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/netstandard2.0/zh-Hans/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/netstandard2.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/uap10.0/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll",
+        "lib/uap10.0/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml",
+        "lib/uap10.0/Microsoft.VisualStudio.TestPlatform.TestFramework.dll",
+        "lib/uap10.0/Microsoft.VisualStudio.TestPlatform.TestFramework.xml",
+        "lib/uap10.0/cs/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/uap10.0/de/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/uap10.0/es/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/uap10.0/fr/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/uap10.0/it/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/uap10.0/ja/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/uap10.0/ko/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/uap10.0/pl/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/uap10.0/pt-BR/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/uap10.0/ru/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/uap10.0/tr/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/uap10.0/zh-Hans/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "lib/uap10.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll",
+        "mstest.testframework.3.1.1.nupkg.sha512",
+        "mstest.testframework.nuspec"
       ]
     },
     "NETStandard.Library/2.0.0": {
@@ -4475,10 +4632,10 @@
         "system.xml.xdocument.nuspec"
       ]
     },
-    "DataAccessFake/1.0.0": {
+    "DataAccessFakes/1.0.0": {
       "type": "project",
-      "path": "../DataAccessFake/DataAccessFake.csproj",
-      "msbuildProject": "../DataAccessFake/DataAccessFake.csproj"
+      "path": "../DataAccessFake/DataAccessFakes.csproj",
+      "msbuildProject": "../DataAccessFake/DataAccessFakes.csproj"
     },
     "DataAccessInterfaces/1.0.0": {
       "type": "project",
@@ -4508,10 +4665,11 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "DataAccessFake >= 1.0.0",
+      "DataAccessFakes >= 1.0.0",
       "DataAccessInterfaces >= 1.0.0",
       "DataObjects >= 1.0.0",
       "LogicLayer >= 1.0.0",
+      "MSTest.TestFramework >= 3.1.1",
       "Microsoft.NET.Test.Sdk >= 17.1.0",
       "NUnit >= 3.13.3",
       "NUnit.Analyzers >= 3.3.0",
@@ -4520,19 +4678,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Samar\\.nuget\\packages\\": {}
+    "C:\\Users\\egish\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Awaab\\Kirkwood\\Tutor\\Dotnet2\\Gishe\\dotnet2FinalProject\\LogicLayerTests\\LogicLayerTests.csproj",
+      "projectUniqueName": "C:\\Users\\egish\\OneDrive\\Desktop\\moved2\\dotnet2FinalProject-main\\dotnet2FinalProject-main\\LogicLayerTests\\LogicLayerTests.csproj",
       "projectName": "LogicLayerTests",
-      "projectPath": "D:\\Awaab\\Kirkwood\\Tutor\\Dotnet2\\Gishe\\dotnet2FinalProject\\LogicLayerTests\\LogicLayerTests.csproj",
-      "packagesPath": "C:\\Users\\Samar\\.nuget\\packages\\",
-      "outputPath": "D:\\Awaab\\Kirkwood\\Tutor\\Dotnet2\\Gishe\\dotnet2FinalProject\\LogicLayerTests\\obj\\",
+      "projectPath": "C:\\Users\\egish\\OneDrive\\Desktop\\moved2\\dotnet2FinalProject-main\\dotnet2FinalProject-main\\LogicLayerTests\\LogicLayerTests.csproj",
+      "packagesPath": "C:\\Users\\egish\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\egish\\OneDrive\\Desktop\\moved2\\dotnet2FinalProject-main\\dotnet2FinalProject-main\\LogicLayerTests\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Samar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\egish\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4546,17 +4709,17 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Awaab\\Kirkwood\\Tutor\\Dotnet2\\Gishe\\dotnet2FinalProject\\DataAccessFake\\DataAccessFake.csproj": {
-              "projectPath": "D:\\Awaab\\Kirkwood\\Tutor\\Dotnet2\\Gishe\\dotnet2FinalProject\\DataAccessFake\\DataAccessFake.csproj"
+            "C:\\Users\\egish\\OneDrive\\Desktop\\moved2\\dotnet2FinalProject-main\\dotnet2FinalProject-main\\DataAccessFake\\DataAccessFakes.csproj": {
+              "projectPath": "C:\\Users\\egish\\OneDrive\\Desktop\\moved2\\dotnet2FinalProject-main\\dotnet2FinalProject-main\\DataAccessFake\\DataAccessFakes.csproj"
             },
-            "D:\\Awaab\\Kirkwood\\Tutor\\Dotnet2\\Gishe\\dotnet2FinalProject\\DataObjectLayer\\DataObjects.csproj": {
-              "projectPath": "D:\\Awaab\\Kirkwood\\Tutor\\Dotnet2\\Gishe\\dotnet2FinalProject\\DataObjectLayer\\DataObjects.csproj"
+            "C:\\Users\\egish\\OneDrive\\Desktop\\moved2\\dotnet2FinalProject-main\\dotnet2FinalProject-main\\DataObjectLayer\\DataObjects.csproj": {
+              "projectPath": "C:\\Users\\egish\\OneDrive\\Desktop\\moved2\\dotnet2FinalProject-main\\dotnet2FinalProject-main\\DataObjectLayer\\DataObjects.csproj"
             },
-            "D:\\Awaab\\Kirkwood\\Tutor\\Dotnet2\\Gishe\\dotnet2FinalProject\\IDataAccessLayer\\DataAccessInterfaces.csproj": {
-              "projectPath": "D:\\Awaab\\Kirkwood\\Tutor\\Dotnet2\\Gishe\\dotnet2FinalProject\\IDataAccessLayer\\DataAccessInterfaces.csproj"
+            "C:\\Users\\egish\\OneDrive\\Desktop\\moved2\\dotnet2FinalProject-main\\dotnet2FinalProject-main\\IDataAccessLayer\\DataAccessInterfaces.csproj": {
+              "projectPath": "C:\\Users\\egish\\OneDrive\\Desktop\\moved2\\dotnet2FinalProject-main\\dotnet2FinalProject-main\\IDataAccessLayer\\DataAccessInterfaces.csproj"
             },
-            "D:\\Awaab\\Kirkwood\\Tutor\\Dotnet2\\Gishe\\dotnet2FinalProject\\LogicLayer\\LogicLayer.csproj": {
-              "projectPath": "D:\\Awaab\\Kirkwood\\Tutor\\Dotnet2\\Gishe\\dotnet2FinalProject\\LogicLayer\\LogicLayer.csproj"
+            "C:\\Users\\egish\\OneDrive\\Desktop\\moved2\\dotnet2FinalProject-main\\dotnet2FinalProject-main\\LogicLayer\\LogicLayer.csproj": {
+              "projectPath": "C:\\Users\\egish\\OneDrive\\Desktop\\moved2\\dotnet2FinalProject-main\\dotnet2FinalProject-main\\LogicLayer\\LogicLayer.csproj"
             }
           }
         }
@@ -4571,6 +4734,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "MSTest.TestFramework": {
+            "target": "Package",
+            "version": "[3.1.1, )"
+          },
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
             "version": "[17.1.0, )"
@@ -4608,7 +4775,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.1.23455.8\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }

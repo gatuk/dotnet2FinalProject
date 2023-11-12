@@ -525,19 +525,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Samar\\.nuget\\packages\\": {}
+    "C:\\Users\\egish\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Awaab\\Kirkwood\\Tutor\\Dotnet2\\Gishe\\dotnet2FinalProject\\ILogicLayer\\LogicLayerInterfaces.csproj",
+      "projectUniqueName": "C:\\Users\\egish\\OneDrive\\Desktop\\moved2\\dotnet2FinalProject-main\\dotnet2FinalProject-main\\ILogicLayer\\LogicLayerInterfaces.csproj",
       "projectName": "LogicLayerInterfaces",
-      "projectPath": "D:\\Awaab\\Kirkwood\\Tutor\\Dotnet2\\Gishe\\dotnet2FinalProject\\ILogicLayer\\LogicLayerInterfaces.csproj",
-      "packagesPath": "C:\\Users\\Samar\\.nuget\\packages\\",
-      "outputPath": "D:\\Awaab\\Kirkwood\\Tutor\\Dotnet2\\Gishe\\dotnet2FinalProject\\ILogicLayer\\obj\\",
+      "projectPath": "C:\\Users\\egish\\OneDrive\\Desktop\\moved2\\dotnet2FinalProject-main\\dotnet2FinalProject-main\\ILogicLayer\\LogicLayerInterfaces.csproj",
+      "packagesPath": "C:\\Users\\egish\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\egish\\OneDrive\\Desktop\\moved2\\dotnet2FinalProject-main\\dotnet2FinalProject-main\\ILogicLayer\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Samar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\egish\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -551,14 +556,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Awaab\\Kirkwood\\Tutor\\Dotnet2\\Gishe\\dotnet2FinalProject\\DataAccessLayer\\DataAccessLayer.csproj": {
-              "projectPath": "D:\\Awaab\\Kirkwood\\Tutor\\Dotnet2\\Gishe\\dotnet2FinalProject\\DataAccessLayer\\DataAccessLayer.csproj"
+            "C:\\Users\\egish\\OneDrive\\Desktop\\moved2\\dotnet2FinalProject-main\\dotnet2FinalProject-main\\DataAccessLayer\\DataAccessLayer.csproj": {
+              "projectPath": "C:\\Users\\egish\\OneDrive\\Desktop\\moved2\\dotnet2FinalProject-main\\dotnet2FinalProject-main\\DataAccessLayer\\DataAccessLayer.csproj"
             },
-            "D:\\Awaab\\Kirkwood\\Tutor\\Dotnet2\\Gishe\\dotnet2FinalProject\\DataObjectLayer\\DataObjects.csproj": {
-              "projectPath": "D:\\Awaab\\Kirkwood\\Tutor\\Dotnet2\\Gishe\\dotnet2FinalProject\\DataObjectLayer\\DataObjects.csproj"
+            "C:\\Users\\egish\\OneDrive\\Desktop\\moved2\\dotnet2FinalProject-main\\dotnet2FinalProject-main\\DataObjectLayer\\DataObjects.csproj": {
+              "projectPath": "C:\\Users\\egish\\OneDrive\\Desktop\\moved2\\dotnet2FinalProject-main\\dotnet2FinalProject-main\\DataObjectLayer\\DataObjects.csproj"
             },
-            "D:\\Awaab\\Kirkwood\\Tutor\\Dotnet2\\Gishe\\dotnet2FinalProject\\IDataAccessLayer\\DataAccessInterfaces.csproj": {
-              "projectPath": "D:\\Awaab\\Kirkwood\\Tutor\\Dotnet2\\Gishe\\dotnet2FinalProject\\IDataAccessLayer\\DataAccessInterfaces.csproj"
+            "C:\\Users\\egish\\OneDrive\\Desktop\\moved2\\dotnet2FinalProject-main\\dotnet2FinalProject-main\\IDataAccessLayer\\DataAccessInterfaces.csproj": {
+              "projectPath": "C:\\Users\\egish\\OneDrive\\Desktop\\moved2\\dotnet2FinalProject-main\\dotnet2FinalProject-main\\IDataAccessLayer\\DataAccessInterfaces.csproj"
             }
           }
         }
@@ -588,7 +593,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.1.23455.8\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }

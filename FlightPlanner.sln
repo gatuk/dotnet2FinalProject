@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccessLayer", "DataAcce
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccessInterfaces", "IDataAccessLayer\DataAccessInterfaces.csproj", "{1BCB4473-DC62-49B3-8080-064E3A5C22F3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccessFake", "DataAccessFake\DataAccessFake.csproj", "{44248FD3-C393-455C-87AA-02BEE0337895}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccessFakes", "DataAccessFake\DataAccessFakes.csproj", "{44248FD3-C393-455C-87AA-02BEE0337895}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataObjects", "DataObjectLayer\DataObjects.csproj", "{22EBFB4A-991C-48CF-93DD-ADFFB4293249}"
 EndProject

@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.1.0" />
+    <PackageReference Include="MSTest.TestFramework" Version="3.1.1" />
     <PackageReference Include="NUnit" Version="3.13.3" />
     <PackageReference Include="NUnit3TestAdapter" Version="4.2.1" />
     <PackageReference Include="NUnit.Analyzers" Version="3.3.0" />
@@ -17,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DataAccessFake\DataAccessFake.csproj" />
+    <ProjectReference Include="..\DataAccessFake\DataAccessFakes.csproj" />
     <ProjectReference Include="..\DataObjectLayer\DataObjects.csproj" />
     <ProjectReference Include="..\IDataAccessLayer\DataAccessInterfaces.csproj" />
     <ProjectReference Include="..\LogicLayer\LogicLayer.csproj" />
