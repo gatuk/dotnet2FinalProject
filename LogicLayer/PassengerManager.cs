@@ -1,4 +1,5 @@
 ﻿using DataAccessLayer;
+using DataAccessInterfaces;
 
 namespace LogicLayer
 {

@@ -62,7 +62,7 @@
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
                     <Grid Grid.Column="0">
-                        <Button x:Name="btnLogin" Content="Login"/>
+                        <Button x:Name="btnLogin" Content="Login" Click="btnLogin_Click"/>
                     </Grid>
                     <Grid Grid.Column="1">
                         <Label x:Name="lblLoginMessage"/>
