@@ -4,10 +4,8 @@ namespace LogicLayer
 {
 	public class PassengerManager : IPassengerManager
 	{
-		public PassengerManager()
-		{
-		// dependency inversion for the data provider
-		private IPassengerAccessor _passengerAccessor = null;
+        // dependency inversion for the data provider
+        private IPassengerAccessor _passengerAccessor = null;		
 
 
 		// the default constructor will use the database

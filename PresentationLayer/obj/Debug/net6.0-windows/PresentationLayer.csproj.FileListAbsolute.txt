@@ -35,13 +35,11 @@ D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\PresentationLayer\bin\
 D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\PresentationLayer\bin\Debug\net6.0-windows\PresentationLayer.runtimeconfig.json
 D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\PresentationLayer\bin\Debug\net6.0-windows\PresentationLayer.dll
 D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\PresentationLayer\bin\Debug\net6.0-windows\PresentationLayer.pdb
-D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\PresentationLayer\bin\Debug\net6.0-windows\DataAccessFake.dll
 D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\PresentationLayer\bin\Debug\net6.0-windows\DataAccessInterfaces.dll
 D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\PresentationLayer\bin\Debug\net6.0-windows\DataAccessLayer.dll
 D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\PresentationLayer\bin\Debug\net6.0-windows\DataObjects.dll
 D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\PresentationLayer\bin\Debug\net6.0-windows\LogicLayer.dll
 D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\PresentationLayer\bin\Debug\net6.0-windows\LogicLayerInterfaces.dll
-D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\PresentationLayer\bin\Debug\net6.0-windows\DataAccessFake.pdb
 D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\PresentationLayer\bin\Debug\net6.0-windows\DataObjects.pdb
 D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\PresentationLayer\bin\Debug\net6.0-windows\DataAccessInterfaces.pdb
 D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\PresentationLayer\bin\Debug\net6.0-windows\LogicLayerInterfaces.pdb
@@ -71,3 +69,5 @@ D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\PresentationLayer\bin\
 D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\PresentationLayer\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
 D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\PresentationLayer\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\PresentationLayer\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\PresentationLayer\bin\Debug\net6.0-windows\DataAccessFakes.dll
+D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\PresentationLayer\bin\Debug\net6.0-windows\DataAccessFakes.pdb
