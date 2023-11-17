@@ -56,7 +56,7 @@ CREATE PROCEDURE [dbo].[sp_verify_user]
 (@username NVARCHAR(50),@password NVARCHAR(255))
 AS 	
 	BEGIN
-		SELECT [UserID]
+		SELECT [Role]
 		FROM [Users]
 		WHERE	Username = @username
 		AND	Password = @password
@@ -116,4 +116,5 @@ INSERT INTO [dbo].[Flight]
 		('AA106', 'American Airlines', 'JFK', 'LAX', '2019-12-01 20:00:00', '2019-12-01 23:00:00', 100),
 		('AA107', 'American Airlines', 'JFK', 'LAX', '2019-12-01 22:00:00', '2019-12-02 01:00:00', 100),
 		('AA108', 'American Airlines', 'JFK', 'LAX', '2019-12-02 00:00:00', '2019-12-02 03:00:00', 100)
+GO
 

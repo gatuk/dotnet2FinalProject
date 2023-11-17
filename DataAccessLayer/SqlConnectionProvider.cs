@@ -9,7 +9,7 @@ namespace DataAccessLayer
 
     public static SqlConnection GetConnection()
     {
-      var connection = new SqlConnection(ConnectionString);
+            SqlConnection connection = new SqlConnection(ConnectionString);
       return connection;
     }
   }

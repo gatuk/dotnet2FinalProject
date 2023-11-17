@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LogicLayerInterfaces")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e2e1ec62947aacbc4fa389c2e75d8b175db55f75")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+13be07296a1e0224f2bf7065e3101bd2e975016a")]
 [assembly: System.Reflection.AssemblyProductAttribute("LogicLayerInterfaces")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LogicLayerInterfaces")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
