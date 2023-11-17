@@ -117,4 +117,12 @@ INSERT INTO [dbo].[Flight]
 		('AA107', 'American Airlines', 'JFK', 'LAX', '2019-12-01 22:00:00', '2019-12-02 01:00:00', 100),
 		('AA108', 'American Airlines', 'JFK', 'LAX', '2019-12-02 00:00:00', '2019-12-02 03:00:00', 100)
 GO
-
+print '' print '*** Creating sp_select_users ***'
+GO
+CREATE PROCEDURE [dbo].[sp_select_users]
+AS 	
+	BEGIN
+		SELECT [UserID],[Username],[Password],[Role]
+		FROM [Users]
+	END
+GO

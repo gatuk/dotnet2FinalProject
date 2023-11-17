@@ -24,10 +24,12 @@ namespace PresentationLayer
     public partial class MainWindow : Window
     {
         private LoginManagerInterface loginManager;
+        private AdminManagerInterface adminManager;
         public MainWindow()
         {
             InitializeComponent();
             loginManager = new LoginManager();
+            adminManager = new AdminManager();
             gridMain.Visibility = Visibility.Collapsed;
         }
 
@@ -56,6 +58,7 @@ namespace PresentationLayer
                 gridAdmin.Visibility = Visibility.Visible;
                 gridAirlineStaff.Visibility = Visibility.Collapsed;
                 gridCustomer.Visibility = Visibility.Collapsed;
+                showUsersData();
             }
             else if (role == "AirlineStaff")
             {
@@ -71,6 +74,13 @@ namespace PresentationLayer
                 gridAirlineStaff.Visibility = Visibility.Collapsed;
                 gridCustomer.Visibility = Visibility.Visible;
             }
+        }
+
+        private void showUsersData()
+        {
+            List<User> users = new List<User>();
+            users = adminManager.getAllUsers();
+            dataGridUsers.ItemsSource = users;
         }
 
         //below method make sure the input of login is correct
