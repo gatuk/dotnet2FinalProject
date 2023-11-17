@@ -28,6 +28,7 @@ namespace PresentationLayer
         {
             InitializeComponent();
             loginManager = new LoginManager();
+            gridMain.Visibility = Visibility.Collapsed;
         }
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
@@ -39,6 +40,37 @@ namespace PresentationLayer
             string role = "";
             role = loginManager.verifyUser(txtUserName.Text, txtPassword.Password);
             lblLoginMessage.Content = role;
+            displayGridByRole(role);
+        }
+
+        private void displayGridByRole(string role)
+        {
+            if (role == "not verify")
+            {
+                lblLoginMessage.Content = "this user is not verify";
+                gridMain.Visibility = Visibility.Collapsed;
+            }
+            else if (role == "Admin")
+            {
+                gridMain.Visibility = Visibility.Visible;
+                gridAdmin.Visibility = Visibility.Visible;
+                gridAirlineStaff.Visibility = Visibility.Collapsed;
+                gridCustomer.Visibility = Visibility.Collapsed;
+            }
+            else if (role == "AirlineStaff")
+            {
+                gridMain.Visibility = Visibility.Visible;
+                gridAdmin.Visibility = Visibility.Collapsed;
+                gridAirlineStaff.Visibility = Visibility.Visible;
+                gridCustomer.Visibility = Visibility.Collapsed;
+            }
+            else if (role == "Customer")
+            {
+                gridMain.Visibility = Visibility.Visible;
+                gridAdmin.Visibility = Visibility.Collapsed;
+                gridAirlineStaff.Visibility = Visibility.Collapsed;
+                gridCustomer.Visibility = Visibility.Visible;
+            }
         }
 
         //below method make sure the input of login is correct

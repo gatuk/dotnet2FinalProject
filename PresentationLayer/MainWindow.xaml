@@ -70,7 +70,17 @@
                 </Grid>
             </Grid>
         </Grid>
-        <Grid Grid.Row="1" Name="Main"></Grid>
+        <Grid Grid.Row="1" x:Name="gridMain">
+            <Grid x:Name="gridAdmin">
+                <Label Content="Admin"/>
+            </Grid>
+            <Grid x:Name="gridAirlineStaff">
+                <Label Content="Air Line Staff"/>
+            </Grid>
+            <Grid x:Name="gridCustomer">
+                <Label Content="Customer"/>
+            </Grid>
+        </Grid>
         <Grid Grid.Row="2" Name="Footer"></Grid>
 
     </Grid>
