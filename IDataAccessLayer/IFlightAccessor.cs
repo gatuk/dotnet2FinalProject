@@ -4,14 +4,15 @@ namespace DataAccessInterfaces
 {
 	public interface IFlightAccessor
 	{
-		List<Flight> SelectFlightsByDepartureDate();
-		List<Flight> SelectFlightsByArrivalDate();
-		List<Flight> SelectFlightsByDepartureCity();
-		List<Flight> SelectFlightsByArrivalCity();
-		List<Flight> SelectFlightsByDepartureTime();
-		List<Flight> SelectFlightsByArrivalTime();
-		List<Flight> SelectFlightsByAirline();
-		List<Flight> SelectFlightsByFlightNumber();
-		List<Flight> SelectFlightsByAirplaneID();
-	}
+		public List<Flight> SelectFlightsByDepartureDate();
+		public List<Flight> SelectFlightsByArrivalDate();
+		public List<Flight> SelectFlightsByDepartureCity();
+		public List<Flight> SelectFlightsByArrivalCity();
+		public List<Flight> SelectFlightsByDepartureTime();
+		public List<Flight> SelectFlightsByArrivalTime();
+		public List<Flight> SelectFlightsByAirline();
+		public List<Flight> SelectFlightsByFlightNumber();
+		public List<Flight> SelectFlightsByAirplaneID();
+        List<Flight> selectAllFlights();
+    }
 }

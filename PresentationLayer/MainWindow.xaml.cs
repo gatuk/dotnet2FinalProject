@@ -25,11 +25,13 @@ namespace PresentationLayer
     {
         private LoginManagerInterface loginManager;
         private AdminManagerInterface adminManager;
+        private IFlightManager flightManager;
         public MainWindow()
         {
             InitializeComponent();
             loginManager = new LoginManager();
             adminManager = new AdminManager();
+            flightManager = new FlightManager();
             gridMain.Visibility = Visibility.Collapsed;
         }
 
@@ -66,6 +68,7 @@ namespace PresentationLayer
                 gridAdmin.Visibility = Visibility.Collapsed;
                 gridAirlineStaff.Visibility = Visibility.Visible;
                 gridCustomer.Visibility = Visibility.Collapsed;
+                showFlightData();
             }
             else if (role == "Customer")
             {
@@ -74,6 +77,13 @@ namespace PresentationLayer
                 gridAirlineStaff.Visibility = Visibility.Collapsed;
                 gridCustomer.Visibility = Visibility.Visible;
             }
+        }
+
+        private void showFlightData()
+        {
+            List<Flight> flights = new List<Flight>();
+            flights = flightManager.getAllFlights();
+            dgFlight.ItemsSource = flights;
         }
 
         private void showUsersData()

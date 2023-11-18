@@ -94,6 +94,7 @@ CREATE TABLE  [dbo].[Flight] (
     [DepartureDateTime] [DATETIME] NOT NULL,
     [ArrivalDateTime] [DATETIME] NOT NULL,
     [AvailableSeats] [int] NOT NULL DEFAULT 0,
+    [Price] [Decimal] Not null default 0.0,	
     CONSTRAINT CHK_AvailableSeats CHECK (AvailableSeats >= 0),
     CONSTRAINT [fk_DepartureAirport] FOREIGN KEY ([DepartureAirport]) REFERENCES Airport (AirportCode),
     CONSTRAINT [fk_ArrivalAirport] FOREIGN KEY ([ArrivalAirport]) REFERENCES Airport (AirportCode)
@@ -161,7 +162,7 @@ AS
 		WHERE UserID=@UserId;
 	END
 GO
-print '' print '*** Creating sp_update_user ***'
+print '' print '*** Creating sp_delete_user ***'
 GO
 CREATE PROCEDURE [dbo].[sp_delete_user]
 (@UserId int)
@@ -170,5 +171,14 @@ AS
 		UPDATE [dbo].[Users]
 		SET [Active] = 0
 		WHERE UserID=@UserId;
+	END
+GO
+print '' print '*** Creating sp_select_all_flights ***'
+GO
+CREATE PROCEDURE [dbo].[sp_select_all_flights]
+AS 	
+	BEGIN
+		SELECT FlightID,[FlightNumber],DepartureAirport,ArrivalAirport,DepartureDateTime, ArrivalDateTime,AvailableSeats,Price,Airline
+		FROM [dbo].[Flight]
 	END
 GO

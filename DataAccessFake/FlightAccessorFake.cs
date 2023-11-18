@@ -49,5 +49,10 @@ namespace DataAccessFakes
 		{
 			throw new NotImplementedException();
 		}
-	}
+
+        public List<Flight> selectAllFlights()
+        {
+            throw new NotImplementedException();
+        }
+    }
 }
