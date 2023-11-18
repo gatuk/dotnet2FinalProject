@@ -106,5 +106,13 @@ namespace PresentationLayer
             frmNewUser.ShowDialog();
             showUsersData();
         }
+
+        private void dataGridUsers_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            User user = (User)dataGridUsers.SelectedItem;
+            Admin.FrmNewUser frmNewUser = new Admin.FrmNewUser(user);
+            frmNewUser.ShowDialog();
+            showUsersData();
+        }
     }
 }

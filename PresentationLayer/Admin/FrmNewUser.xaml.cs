@@ -28,8 +28,25 @@ namespace PresentationLayer.Admin
         {
             adminManager = new AdminManager();
             user = new User();
+            user.UserId = 0;
             InitializeComponent();
             fillRoleComboBox();
+        }
+
+        public FrmNewUser(User user)
+        {
+            this.user = user;
+            adminManager = new AdminManager();
+            InitializeComponent();
+            fillRoleComboBox();
+            fillFormData();
+        }
+
+        private void fillFormData()
+        {
+            txtUserName.Text = user.UserName;
+            txtPassword.Text = user.Password;
+            combRole.SelectedItem = user.Role;
         }
 
         private void fillRoleComboBox()
@@ -48,7 +65,15 @@ namespace PresentationLayer.Admin
             user.UserName = txtUserName.Text;
             user.Password = txtPassword.Text;
             user.Role = combRole.SelectedItem.ToString();
-            int result = adminManager.addUser(user);
+            int result = 0;
+            if (user.UserId == 0)
+            {
+                result= adminManager.addUser(user);
+            }
+            else {
+                result = adminManager.updateUser(user);
+            }
+            
             if (result == 0)
             {
                 lblFormMessage.Content = "user did not added!";

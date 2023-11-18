@@ -35,5 +35,12 @@ namespace LogicLayer
             roles = adminAccessor.selectRoles();
             return roles;
         }
+
+        public int updateUser(User user)
+        {
+            int result = 0;
+            result = adminAccessor.updateUser(user);
+            return result;
+        }
     }
 }

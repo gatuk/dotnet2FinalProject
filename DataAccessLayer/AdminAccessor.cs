@@ -99,5 +99,29 @@ namespace DataAccessLayer
             finally { conn.Close(); }
             return users;
         }
+
+        public int updateUser(User user)
+        {
+            int result = 0;
+            SqlConnection conn = SqlConnectionProvider.GetConnection();
+            var cmd = new SqlCommand("sp_update_user", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@UserId", user.UserId);
+            cmd.Parameters.AddWithValue("@username", user.UserName);
+            cmd.Parameters.AddWithValue("@Password", user.Password);
+            cmd.Parameters.AddWithValue("@Role", user.Role);
+            try
+            {
+                conn.Open();
+                result = cmd.ExecuteNonQuery();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally { conn.Close(); }
+            return result;
+        }
     }
 }

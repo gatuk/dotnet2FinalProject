@@ -148,3 +148,14 @@ AS
 		(@username, @Password,@Role)
 	END
 GO
+print '' print '*** Creating sp_update_user ***'
+GO
+CREATE PROCEDURE [dbo].[sp_update_user]
+(@UserId int,@username NVARCHAR(50),@Password NVARCHAR(255),@Role NVARCHAR(50))
+AS 	
+	BEGIN
+		UPDATE [dbo].[Users]
+		SET [Username] = @username,[Password]= @Password,[Role] = @Role
+		WHERE UserID=@UserId;
+	END
+GO

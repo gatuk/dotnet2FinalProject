@@ -12,5 +12,6 @@ namespace DataAccessInterfaces
         public int insertUser(User user);
         public List<string> selectRoles();
         public List<User> selectUsers();
+        public int updateUser(User user);
     }
 }
