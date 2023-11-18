@@ -114,5 +114,24 @@ namespace PresentationLayer
             frmNewUser.ShowDialog();
             showUsersData();
         }
+
+        private void btnDeleteUser_Click(object sender, RoutedEventArgs e)
+        {
+            User user = (User)dataGridUsers.SelectedItem;
+            if (user == null)
+            {
+                lblAdminMessage.Content = "Please select a user!";
+            }
+            lblAdminMessage.Content = "";
+            int result = adminManager.deleteUser(user);
+            if (result == 0)
+            {
+                lblAdminMessage.Content = "user did not deleted!";
+                return;
+            }
+            lblAdminMessage.Content = "";
+            showUsersData();
+
+        }
     }
 }

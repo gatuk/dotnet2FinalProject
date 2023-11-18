@@ -92,8 +92,13 @@
                         <Button x:Name="btnAddUser" Content="add user" VerticalAlignment="Center" 
                                 HorizontalAlignment="Center" Click="btnAddUser_Click" />
                     </Grid>
-                    <Grid Grid.Column="1"></Grid>
-                    <Grid Grid.Column="2"></Grid>
+                    <Grid Grid.Column="1">
+                        <Button x:Name="btnDeleteUser" Content="Delete user" VerticalAlignment="Center" 
+                            HorizontalAlignment="Center" Click="btnDeleteUser_Click" />
+                    </Grid>
+                    <Grid Grid.Column="2">
+                        <Label x:Name="lblAdminMessage" />
+                    </Grid>
                     <Grid Grid.Column="3"></Grid>
                 </Grid>
             </Grid>

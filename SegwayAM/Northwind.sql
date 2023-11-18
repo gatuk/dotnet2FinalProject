@@ -36,6 +36,7 @@ CREATE TABLE Users (
     Username NVARCHAR(50) NOT NULL UNIQUE,
     Password NVARCHAR(255) NOT NULL,
     Role NVARCHAR(50) NOT NULL,
+    Active bit default 1,
   CONSTRAINT [pk_UserID] PRIMARY KEY([UserID]),
   CONSTRAINT [fk_Role] FOREIGN KEY([Role])
 		REFERENCES [dbo].[Roles]([RoleID]),	
@@ -124,6 +125,7 @@ AS
 	BEGIN
 		SELECT [UserID],[Username],[Password],[Role]
 		FROM [Users]
+		WHERE Active = 1
 	END
 GO
 print '' print '*** Creating sp_select_roles ***'
@@ -156,6 +158,17 @@ AS
 	BEGIN
 		UPDATE [dbo].[Users]
 		SET [Username] = @username,[Password]= @Password,[Role] = @Role
+		WHERE UserID=@UserId;
+	END
+GO
+print '' print '*** Creating sp_update_user ***'
+GO
+CREATE PROCEDURE [dbo].[sp_delete_user]
+(@UserId int)
+AS 	
+	BEGIN
+		UPDATE [dbo].[Users]
+		SET [Active] = 0
 		WHERE UserID=@UserId;
 	END
 GO

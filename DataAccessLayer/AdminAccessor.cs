@@ -12,6 +12,27 @@ namespace DataAccessLayer
 {
     public class AdminAccessor : AdminAccessorInterface
     {
+        public int deleteUser(User? user)
+        {
+            int result = 0;
+            SqlConnection conn = SqlConnectionProvider.GetConnection();
+            var cmd = new SqlCommand("sp_delete_user", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@UserId", user.UserId);
+            try
+            {
+                conn.Open();
+                result = cmd.ExecuteNonQuery();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally { conn.Close(); }
+            return result;
+        }
+
         public int insertUser(User user)
         {
             int result = 0;

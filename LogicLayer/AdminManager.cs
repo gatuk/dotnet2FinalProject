@@ -21,6 +21,13 @@ namespace LogicLayer
             return result;
         }
 
+        public int deleteUser(User? user)
+        {
+            int result = 0;
+            result = adminAccessor.deleteUser(user);
+            return result;
+        }
+
         public List<User> getAllUsers()
         {
             List<User> users = new List<User>();
