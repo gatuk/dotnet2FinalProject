@@ -11,6 +11,14 @@ namespace LogicLayer
         public FlightManager() { 
             flightAccessor = new FlightAccessor();
         }
+
+        public int addNewFlight(Flight flight)
+        {
+            int result = 0;
+            result = flightAccessor.insert(flight);
+            return result;
+        }
+
         public List<Flight> getAllFlights()
         {
             List<Flight> flights = new List<Flight>();

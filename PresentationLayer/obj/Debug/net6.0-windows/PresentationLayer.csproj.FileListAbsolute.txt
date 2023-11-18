@@ -73,3 +73,5 @@ D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\PresentationLayer\bin\
 D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\PresentationLayer\bin\Debug\net6.0-windows\DataAccessFakes.pdb
 D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\PresentationLayer\obj\Debug\net6.0-windows\Admin\FrmNewUser.g.cs
 D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\PresentationLayer\obj\Debug\net6.0-windows\Admin\FrmNewUser.baml
+D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\PresentationLayer\obj\Debug\net6.0-windows\FrmFlights.g.cs
+D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\PresentationLayer\obj\Debug\net6.0-windows\FrmFlights.baml

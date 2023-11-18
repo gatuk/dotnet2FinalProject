@@ -143,5 +143,12 @@ namespace PresentationLayer
             showUsersData();
 
         }
+
+        private void btnAddNew_Click(object sender, RoutedEventArgs e)
+        {
+            FrmFlights frmFlights = new FrmFlights();
+            frmFlights.ShowDialog();
+            showFlightData();
+        }
     }
 }

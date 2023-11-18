@@ -13,6 +13,7 @@ namespace DataAccessInterfaces
 		public List<Flight> SelectFlightsByAirline();
 		public List<Flight> SelectFlightsByFlightNumber();
 		public List<Flight> SelectFlightsByAirplaneID();
-        List<Flight> selectAllFlights();
+        public List<Flight> selectAllFlights();
+        public int insert(Flight flight);
     }
 }

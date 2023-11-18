@@ -7,6 +7,13 @@ namespace DataAccessLayer
 {
     public class FlightAccessor : IFlightAccessor
     {
+        public int insert(Flight flight)
+        {
+            int result = 0;
+            //We stopped here
+            return result;
+        }
+
         public List<Flight> selectAllFlights()
         {
             List<Flight> flights = new List<Flight>();
