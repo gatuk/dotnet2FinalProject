@@ -9,6 +9,8 @@ namespace DataAccessInterfaces
 {
     public interface AdminAccessorInterface
     {
+        public int insertUser(User user);
+        public List<string> selectRoles();
         public List<User> selectUsers();
     }
 }

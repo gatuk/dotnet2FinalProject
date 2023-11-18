@@ -126,3 +126,25 @@ AS
 		FROM [Users]
 	END
 GO
+print '' print '*** Creating sp_select_roles ***'
+GO
+CREATE PROCEDURE [dbo].[sp_select_roles]
+AS 	
+	BEGIN
+		SELECT [RoleID]
+		FROM [Roles]
+	END
+GO
+
+print '' print '*** Creating sp_insert_user ***'
+GO
+CREATE PROCEDURE [dbo].[sp_insert_user]
+(@username NVARCHAR(50),@Password NVARCHAR(255),@Role NVARCHAR(50))
+AS 	
+	BEGIN
+		INSERT INTO [dbo].[Users]
+		([Username],[Password],[Role])
+	VALUES
+		(@username, @Password,@Role)
+	END
+GO

@@ -8,6 +8,8 @@ namespace LogicLayerInterfaces
 {
     public interface AdminManagerInterface
     {
+        public int addUser(User user);
         public List<User> getAllUsers();
+        public List<string> getRoles();
     }
 }

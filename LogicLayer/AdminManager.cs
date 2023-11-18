@@ -13,6 +13,14 @@ namespace LogicLayer
     public class AdminManager : AdminManagerInterface
     {
         private AdminAccessorInterface adminAccessor = new AdminAccessor();
+
+        public int addUser(User user)
+        {
+            int result = 0;
+            result = adminAccessor.insertUser(user);
+            return result;
+        }
+
         public List<User> getAllUsers()
         {
             List<User> users = new List<User>();
@@ -21,5 +29,11 @@ namespace LogicLayer
             
         }
 
+        public List<string> getRoles()
+        {
+            List<string> roles = new List<string>();
+            roles = adminAccessor.selectRoles();
+            return roles;
+        }
     }
 }

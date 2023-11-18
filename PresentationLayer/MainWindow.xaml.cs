@@ -99,5 +99,12 @@ namespace PresentationLayer
             lblLoginMessage.Content = "";
             return true;
         }
+
+        private void btnAddUser_Click(object sender, RoutedEventArgs e)
+        {
+            Admin.FrmNewUser frmNewUser = new Admin.FrmNewUser();
+            frmNewUser.ShowDialog();
+            showUsersData();
+        }
     }
 }
