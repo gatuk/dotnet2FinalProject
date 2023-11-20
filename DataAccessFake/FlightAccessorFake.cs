@@ -64,5 +64,10 @@ namespace DataAccessFakes
         {
             throw new NotImplementedException();
         }
+
+        public int updateFlight(Flight flight)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

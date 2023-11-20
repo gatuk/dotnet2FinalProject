@@ -150,5 +150,14 @@ namespace PresentationLayer
             frmFlights.ShowDialog();
             showFlightData();
         }
+
+        private void dgFlight_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            Flight flight = new Flight();
+            flight = (Flight) dgFlight.SelectedItem;
+            FrmFlights frmFlights = new FrmFlights(flight);
+            frmFlights.ShowDialog();
+            showFlightData();
+        }
     }
 }

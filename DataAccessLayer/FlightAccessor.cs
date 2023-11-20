@@ -149,5 +149,34 @@ namespace DataAccessLayer
         {
             throw new NotImplementedException();
         }
+
+        public int updateFlight(Flight flight)
+        {
+            int result = 0;
+            SqlConnection conn = SqlConnectionProvider.GetConnection();
+            var cmd = new SqlCommand("sp_update_flight", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@FlightId", flight.FlightId);
+            cmd.Parameters.AddWithValue("@FlightNumber", flight.FlightNumber);
+            cmd.Parameters.AddWithValue("@Departure", flight.Departure);
+            cmd.Parameters.AddWithValue("@Destination", flight.Destination);
+            cmd.Parameters.AddWithValue("@DepartureTime", flight.DepartureTime);
+            cmd.Parameters.AddWithValue("@ArrivalTime", flight.ArrivalTime);
+            cmd.Parameters.AddWithValue("@AvailableSeats", flight.AvailableSeats);
+            cmd.Parameters.AddWithValue("@Price", flight.Price);
+            cmd.Parameters.AddWithValue("@Airline", flight.Airline);
+            try
+            {
+                conn.Open();
+                result = cmd.ExecuteNonQuery();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally { conn.Close(); }
+            return result;
+        }
     }
 }

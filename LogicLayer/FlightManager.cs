@@ -19,6 +19,13 @@ namespace LogicLayer
             return result;
         }
 
+        public int editFlight(Flight flight)
+        {
+            int result = 0;
+            result = flightAccessor.updateFlight(flight);
+            return result;
+        }
+
         public List<string> getAllAirPortCodes()
         {
             List<string> result = new List<string>();

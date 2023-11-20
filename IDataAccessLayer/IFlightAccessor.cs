@@ -16,5 +16,6 @@ namespace DataAccessInterfaces
         public List<Flight> selectAllFlights();
         public int insert(Flight flight);
         public List<string> selectAllAirportCode();
+        public int updateFlight(Flight flight);
     }
 }

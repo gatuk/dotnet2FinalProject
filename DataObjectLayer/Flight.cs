@@ -3,9 +3,9 @@
 	public class Flight
 	{
 		public int FlightId { get; set; }
-		public string FlightNumber { get; set; }
-		public string Departure { get; set; }
-		public string Destination { get; set; }
+		public string? FlightNumber { get; set; }
+		public string? Departure { get; set; }
+		public string? Destination { get; set; }
 		public DateTime DepartureTime { get; set; }
 		public DateTime ArrivalTime { get; set; }
 		//public int Capacity { get; set; }

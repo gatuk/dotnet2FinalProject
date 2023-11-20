@@ -23,11 +23,39 @@ namespace PresentationLayer
     public partial class FrmFlights : Window
     {
         private IFlightManager flightManager;
+
+        private Flight Flight = null;
+        private string newOrEdit = "";
+
         public FrmFlights()
         {
             InitializeComponent();
             flightManager = new FlightManager();
+            Flight = new Flight();
             fillCombos();
+            newOrEdit = "New";
+        }
+
+        public FrmFlights(Flight flight)
+        {
+            InitializeComponent();
+            flightManager = new FlightManager();
+            Flight = flight;
+            fillCombos();
+            fillForm();
+            newOrEdit = "Edit";
+        }
+
+        private void fillForm()
+        {
+            txtFlightNumber.Text = Flight.FlightNumber;
+            comboDeparture.SelectedItem = Flight.Departure;
+            comboDestination.SelectedItem = Flight.Destination;
+            txtDepartureTime.Text = Flight.DepartureTime.ToString();
+            txtArrivalTime.Text = Flight.ArrivalTime.ToString();
+            txtAvailableSeats.Text = Flight.AvailableSeats.ToString();
+            txtPrice.Text = Flight.Price.ToString();
+            txtAirline.Text = Flight.Airline;
         }
 
         private void fillCombos()
@@ -45,16 +73,24 @@ namespace PresentationLayer
                 return;
             }
             int result = 0;
-            Flight flight = new Flight();
-            flight.FlightNumber = txtFlightNumber.Text;
-            flight.Departure = comboDeparture.SelectedItem.ToString();
-            flight.Destination = comboDestination.SelectedItem.ToString();
-            flight.DepartureTime = Convert.ToDateTime(txtDepartureTime.Text);
-            flight.ArrivalTime = Convert.ToDateTime(txtArrivalTime.Text);
-            flight.AvailableSeats = Convert.ToInt32(txtAvailableSeats.Text);
-            flight.Price = Convert.ToDecimal(txtPrice.Text);
-            flight.Airline = txtAirline.Text;
-            result = flightManager.addNewFlight(flight);
+           
+            Flight.FlightNumber =txtFlightNumber.Text;
+            Flight.Departure = comboDeparture.SelectedItem.ToString();
+            Flight.Destination = comboDestination.SelectedItem.ToString();
+            Flight.DepartureTime = Convert.ToDateTime(txtDepartureTime.Text);
+            Flight.ArrivalTime = Convert.ToDateTime(txtArrivalTime.Text);
+            Flight.AvailableSeats = Convert.ToInt32(txtAvailableSeats.Text);
+            Flight.Price = Convert.ToDecimal(txtPrice.Text);
+            Flight.Airline = txtAirline.Text;
+            if (newOrEdit == "New")
+            {
+                result = flightManager.addNewFlight(Flight);
+            }
+            else
+            {
+                result = flightManager.editFlight(Flight);
+            }
+            
             if (result == 0)
             {
                 lblFlightFormMessage.Content = "Flight did not added!";
@@ -83,6 +119,7 @@ namespace PresentationLayer
                 lblFlightFormMessage.Content = "Flight number require";
                 return false;
             }
+            
             if (comboDeparture.SelectedItem == null)
             {
                 lblFlightFormMessage.Content = "Departure require";

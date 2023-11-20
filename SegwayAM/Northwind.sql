@@ -185,7 +185,7 @@ GO
 print '' print '*** Creating sp_insert_flight ***'
 GO
 CREATE PROCEDURE [dbo].[sp_insert_flight]
-(@FlightNumber [int],@Departure [nvarchar](10),@Destination[nvarchar](10),
+(@FlightNumber [nvarchar](10),@Departure [nvarchar](10),@Destination[nvarchar](10),
 @DepartureTime  [DATETIME], @ArrivalTime  [DATETIME], @AvailableSeats [int], @Price [Decimal], @Airline [nvarchar](255))
 AS 	
 	BEGIN
@@ -202,5 +202,25 @@ AS
 	BEGIN
 		SELECT [AirportCode]
 		FROM [dbo].[Airport]
+	END
+GO
+print '' print '*** Creating sp_update_flight ***'
+GO
+CREATE PROCEDURE [dbo].[sp_update_flight]
+(@FlightId [int], @FlightNumber [nvarchar](10),@Departure [nvarchar](10),@Destination[nvarchar](10),
+@DepartureTime  [DATETIME], @ArrivalTime  [DATETIME], @AvailableSeats [int], @Price [Decimal], @Airline [nvarchar](255))
+AS 	
+	BEGIN
+		UPDATE [dbo].[Flight]
+		SET	[FlightNumber]= @FlightNumber,
+		   	[Airline]= @Airline,
+			[DepartureAirport]= @Departure,
+			[ArrivalAirport]=  @Destination,
+			[DepartureDateTime]= @DepartureTime,
+			[ArrivalDateTime]= @ArrivalTime,
+			[AvailableSeats] = @AvailableSeats,
+			[Price]	= @Price
+		WHERE	[FlightID] = @FlightId
+		
 	END
 GO
