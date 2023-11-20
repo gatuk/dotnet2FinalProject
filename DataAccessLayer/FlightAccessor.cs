@@ -10,8 +10,57 @@ namespace DataAccessLayer
         public int insert(Flight flight)
         {
             int result = 0;
-            //We stopped here
+            SqlConnection conn = SqlConnectionProvider.GetConnection();
+            var cmd = new SqlCommand("sp_insert_flight", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@FlightNumber", flight.FlightNumber);
+            cmd.Parameters.AddWithValue("@Departure", flight.Departure);
+            cmd.Parameters.AddWithValue("@Destination", flight.Destination);
+            cmd.Parameters.AddWithValue("@DepartureTime", flight.DepartureTime);
+            cmd.Parameters.AddWithValue("@ArrivalTime", flight.ArrivalTime);
+            cmd.Parameters.AddWithValue("@AvailableSeats", flight.AvailableSeats);
+            cmd.Parameters.AddWithValue("@Price", flight.Price);
+            cmd.Parameters.AddWithValue("@Airline", flight.Airline);
+            try
+            {
+                conn.Open();
+                result = cmd.ExecuteNonQuery();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally { conn.Close(); }
             return result;
+        }
+
+        public List<string> selectAllAirportCode()
+        {
+            List<string> airPortCodes = new List<string>();
+            SqlConnection conn = SqlConnectionProvider.GetConnection();
+            SqlCommand cmd = new SqlCommand("sp_select_all_airport_codes", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            try
+            {
+                conn.Open();
+                var reader = cmd.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        airPortCodes.Add(reader.GetString(0));
+                    }
+
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally { conn.Close(); }
+            return airPortCodes;
         }
 
         public List<Flight> selectAllFlights()

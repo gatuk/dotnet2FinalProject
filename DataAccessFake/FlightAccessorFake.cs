@@ -54,5 +54,15 @@ namespace DataAccessFakes
         {
             throw new NotImplementedException();
         }
+
+        public int insert(Flight flight)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<string> selectAllAirportCode()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

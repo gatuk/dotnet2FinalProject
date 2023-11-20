@@ -27,6 +27,15 @@ namespace PresentationLayer
         {
             InitializeComponent();
             flightManager = new FlightManager();
+            fillCombos();
+        }
+
+        private void fillCombos()
+        {
+            List<string> airportCodes = new List<string>();
+            airportCodes = flightManager.getAllAirPortCodes();
+            comboDestination.ItemsSource = airportCodes;
+            comboDeparture.ItemsSource = airportCodes;
         }
 
         private void btnSubmit_Click(object sender, RoutedEventArgs e)
@@ -38,9 +47,8 @@ namespace PresentationLayer
             int result = 0;
             Flight flight = new Flight();
             flight.FlightNumber = txtFlightNumber.Text;
-            flight.Departure = txtDeparture.Text;
-            flight.Destination = txtDestination.Text;
-            flight.Departure = txtDeparture.Text;
+            flight.Departure = comboDeparture.SelectedItem.ToString();
+            flight.Destination = comboDestination.SelectedItem.ToString();
             flight.DepartureTime = Convert.ToDateTime(txtDepartureTime.Text);
             flight.ArrivalTime = Convert.ToDateTime(txtArrivalTime.Text);
             flight.AvailableSeats = Convert.ToInt32(txtAvailableSeats.Text);
@@ -59,8 +67,8 @@ namespace PresentationLayer
         private void clearForm()
         {
             txtFlightNumber.Text = "";
-            txtDeparture.Text = "";
-            txtDestination.Text = "";
+            comboDeparture.SelectedIndex = 0;
+            comboDestination.SelectedIndex = 0;
             txtDepartureTime.Text = "";
             txtArrivalTime.Text = "";
             txtAvailableSeats.Text = "";
@@ -75,12 +83,12 @@ namespace PresentationLayer
                 lblFlightFormMessage.Content = "Flight number require";
                 return false;
             }
-            if (txtDeparture.Text.Length == 0)
+            if (comboDeparture.SelectedItem == null)
             {
                 lblFlightFormMessage.Content = "Departure require";
                 return false;
             }
-            if (txtDestination.Text.Length == 0)
+            if (comboDestination.SelectedItem == null)
             {
                 lblFlightFormMessage.Content = "Destination require";
                 return false;

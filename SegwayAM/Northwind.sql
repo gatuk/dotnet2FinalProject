@@ -182,3 +182,25 @@ AS
 		FROM [dbo].[Flight]
 	END
 GO
+print '' print '*** Creating sp_insert_flight ***'
+GO
+CREATE PROCEDURE [dbo].[sp_insert_flight]
+(@FlightNumber [int],@Departure [nvarchar](10),@Destination[nvarchar](10),
+@DepartureTime  [DATETIME], @ArrivalTime  [DATETIME], @AvailableSeats [int], @Price [Decimal], @Airline [nvarchar](255))
+AS 	
+	BEGIN
+		INSERT INTO [dbo].[Flight]
+		([FlightNumber],[Airline],[DepartureAirport],[ArrivalAirport],[DepartureDateTime],[ArrivalDateTime],[AvailableSeats])
+	VALUES
+		(@FlightNumber, @Airline,@Departure,@Destination,@DepartureTime,@ArrivalTime, @AvailableSeats)
+	END
+GO
+print '' print '*** Creating sp_select_all_airport_codes ***'
+GO
+CREATE PROCEDURE [dbo].[sp_select_all_airport_codes]
+AS 	
+	BEGIN
+		SELECT [AirportCode]
+		FROM [dbo].[Airport]
+	END
+GO

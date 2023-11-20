@@ -19,6 +19,13 @@ namespace LogicLayer
             return result;
         }
 
+        public List<string> getAllAirPortCodes()
+        {
+            List<string> result = new List<string>();
+            result = flightAccessor.selectAllAirportCode();
+            return result;
+        }
+
         public List<Flight> getAllFlights()
         {
             List<Flight> flights = new List<Flight>();
