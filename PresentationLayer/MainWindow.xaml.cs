@@ -159,5 +159,25 @@ namespace PresentationLayer
             frmFlights.ShowDialog();
             showFlightData();
         }
+
+        private void btnDelete_Click(object sender, RoutedEventArgs e)
+        {
+            Flight flight = (Flight) dgFlight.SelectedItem;
+            if (flight == null)
+            {
+                lblDeleteNote.Content = "Please choose a row!";
+                return;
+                    
+            }
+            int result = 0;
+            result = flightManager.deleteFlight(flight);
+            if (result == 0)
+            {
+                lblDeleteNote.Content = "Flight did not delete !";
+                return;
+            }
+            lblDeleteNote.Content = "Flight deleted";
+            showFlightData();
+        }
     }
 }

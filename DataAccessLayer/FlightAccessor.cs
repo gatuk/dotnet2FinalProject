@@ -7,6 +7,27 @@ namespace DataAccessLayer
 {
     public class FlightAccessor : IFlightAccessor
     {
+        public int deleteFlight(Flight flight)
+        {
+            int result = 0;
+            SqlConnection conn = SqlConnectionProvider.GetConnection();
+            var cmd = new SqlCommand("sp_delete_flight", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@FlightId", flight.FlightId);
+            try
+            {
+                conn.Open();
+                result = cmd.ExecuteNonQuery();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally { conn.Close(); }
+            return result;
+        }
+
         public int insert(Flight flight)
         {
             int result = 0;

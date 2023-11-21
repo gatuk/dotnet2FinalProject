@@ -122,8 +122,12 @@
                     <Grid Grid.Column="0">
                         <Button x:Name="btnAddNew" Content="Add new" Click="btnAddNew_Click"/>
                     </Grid>
-                    <Grid Grid.Column="1"></Grid>
-                    <Grid Grid.Column="2"></Grid>
+                    <Grid Grid.Column="1">
+                        <Button x:Name="btnDelete" Content="Delete" Click="btnDelete_Click"/>
+                    </Grid>
+                    <Grid Grid.Column="2">
+                        <Label x:Name="lblDeleteNote"/>
+                    </Grid>
                     <Grid Grid.Column="3"></Grid>
                 </Grid>
             </Grid>

@@ -149,6 +149,7 @@ AS
 		([Username],[Password],[Role])
 	VALUES
 		(@username, @Password,@Role)
+	return @@ROWCOUNT
 	END
 GO
 print '' print '*** Creating sp_update_user ***'
@@ -160,6 +161,7 @@ AS
 		UPDATE [dbo].[Users]
 		SET [Username] = @username,[Password]= @Password,[Role] = @Role
 		WHERE UserID=@UserId;
+	return @@ROWCOUNT
 	END
 GO
 print '' print '*** Creating sp_delete_user ***'
@@ -171,6 +173,7 @@ AS
 		UPDATE [dbo].[Users]
 		SET [Active] = 0
 		WHERE UserID=@UserId;
+	return @@ROWCOUNT
 	END
 GO
 print '' print '*** Creating sp_select_all_flights ***'
@@ -193,6 +196,7 @@ AS
 		([FlightNumber],[Airline],[DepartureAirport],[ArrivalAirport],[DepartureDateTime],[ArrivalDateTime],[AvailableSeats])
 	VALUES
 		(@FlightNumber, @Airline,@Departure,@Destination,@DepartureTime,@ArrivalTime, @AvailableSeats)
+	return @@ROWCOUNT
 	END
 GO
 print '' print '*** Creating sp_select_all_airport_codes ***'
@@ -221,6 +225,16 @@ AS
 			[AvailableSeats] = @AvailableSeats,
 			[Price]	= @Price
 		WHERE	[FlightID] = @FlightId
-		
+		return @@ROWCOUNT
+	END
+GO
+print '' print '*** Creating sp_delete_flight ***'
+GO
+CREATE PROCEDURE [dbo].[sp_delete_flight]
+(@FlightId [int])
+AS 	
+	BEGIN
+		DELETE FROM [dbo].[Flight] WHERE [FlightID] = @FlightId;
+	return @@ROWCOUNT
 	END
 GO

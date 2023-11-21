@@ -69,5 +69,10 @@ namespace DataAccessFakes
         {
             throw new NotImplementedException();
         }
+
+        public int deleteFlight(Flight flight)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

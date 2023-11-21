@@ -19,6 +19,13 @@ namespace LogicLayer
             return result;
         }
 
+        public int deleteFlight(Flight flight)
+        {
+            int result = 0;
+            result = flightAccessor.deleteFlight(flight);
+            return result;
+        }
+
         public int editFlight(Flight flight)
         {
             int result = 0;
