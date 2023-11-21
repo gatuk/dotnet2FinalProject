@@ -10,7 +10,7 @@ using DataObjects;
 
 namespace DataAccessLayer
 {
-    public class LoginAccessor : LoginAccessorInterface
+    public class LoginAccessor : ILoginAccessor
     {
         public string verifyUser(string username, string password)
         {

@@ -3,13 +3,13 @@ using DataObjects;
 
 namespace DataAccessFakes
 {
-    public class passengerAccessorFake : IPassengerAccessor
+    public class PassengerAccessorFake : IPassengerAccessor
     {
         // create a few fake passenger for testing
         private List<PassengerVM> fakePassengers = new List<PassengerVM>();
         private List<string> passwordHashes = new List<string>();
 
-        public passengerAccessorFake()
+        public PassengerAccessorFake()
         {
             fakePassengers.Add(new PassengerVM()
             {
@@ -30,6 +30,7 @@ namespace DataAccessFakes
                 SeatNumber = "1B",
                 Email = "",
                 Roles = new List<string>()
+
             });
         }
 

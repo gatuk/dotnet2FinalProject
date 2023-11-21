@@ -10,9 +10,9 @@ using LogicLayerInterfaces;
 
 namespace LogicLayer
 {
-    public class AdminManager : AdminManagerInterface
+    public class AdminManager : IAdminManager
     {
-        private AdminAccessorInterface adminAccessor = new AdminAccessor();
+        private IAdminAccessor adminAccessor = new AdminAccessor();
 
         public int addUser(User user)
         {

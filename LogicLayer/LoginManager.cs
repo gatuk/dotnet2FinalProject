@@ -10,9 +10,9 @@ using DataObjects;
 
 namespace LogicLayer
 {
-    public class LoginManager : LoginManagerInterface
+    public class LoginManager : ILoginManager
     {
-        private LoginAccessorInterface loginAccessor = new LoginAccessor();
+        private ILoginAccessor loginAccessor = new LoginAccessor();
 
         public string verifyUser(string username, string password)
         {

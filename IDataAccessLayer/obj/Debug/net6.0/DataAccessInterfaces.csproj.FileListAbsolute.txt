@@ -14,3 +14,19 @@ D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\IDataAccessLayer\obj\D
 D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\IDataAccessLayer\obj\Debug\net6.0\refint\DataAccessInterfaces.dll
 D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\IDataAccessLayer\obj\Debug\net6.0\DataAccessInterfaces.pdb
 D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\IDataAccessLayer\obj\Debug\net6.0\ref\DataAccessInterfaces.dll
+C:\Users\egish\OneDrive\Desktop\new folder 2023\awaab\nov18\dotnet2FinalProject\IDataAccessLayer\bin\Debug\net6.0\DataAccessInterfaces.deps.json
+C:\Users\egish\OneDrive\Desktop\new folder 2023\awaab\nov18\dotnet2FinalProject\IDataAccessLayer\bin\Debug\net6.0\DataAccessInterfaces.dll
+C:\Users\egish\OneDrive\Desktop\new folder 2023\awaab\nov18\dotnet2FinalProject\IDataAccessLayer\bin\Debug\net6.0\DataAccessInterfaces.pdb
+C:\Users\egish\OneDrive\Desktop\new folder 2023\awaab\nov18\dotnet2FinalProject\IDataAccessLayer\bin\Debug\net6.0\DataObjects.dll
+C:\Users\egish\OneDrive\Desktop\new folder 2023\awaab\nov18\dotnet2FinalProject\IDataAccessLayer\bin\Debug\net6.0\DataObjects.pdb
+C:\Users\egish\OneDrive\Desktop\new folder 2023\awaab\nov18\dotnet2FinalProject\IDataAccessLayer\obj\Debug\net6.0\DataAccessInterfaces.csproj.AssemblyReference.cache
+C:\Users\egish\OneDrive\Desktop\new folder 2023\awaab\nov18\dotnet2FinalProject\IDataAccessLayer\obj\Debug\net6.0\DataAccessInterfaces.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\egish\OneDrive\Desktop\new folder 2023\awaab\nov18\dotnet2FinalProject\IDataAccessLayer\obj\Debug\net6.0\DataAccessInterfaces.AssemblyInfoInputs.cache
+C:\Users\egish\OneDrive\Desktop\new folder 2023\awaab\nov18\dotnet2FinalProject\IDataAccessLayer\obj\Debug\net6.0\DataAccessInterfaces.AssemblyInfo.cs
+C:\Users\egish\OneDrive\Desktop\new folder 2023\awaab\nov18\dotnet2FinalProject\IDataAccessLayer\obj\Debug\net6.0\DataAccessInterfaces.csproj.CoreCompileInputs.cache
+C:\Users\egish\OneDrive\Desktop\new folder 2023\awaab\nov18\dotnet2FinalProject\IDataAccessLayer\obj\Debug\net6.0\DataAccessInterfaces.sourcelink.json
+C:\Users\egish\OneDrive\Desktop\new folder 2023\awaab\nov18\dotnet2FinalProject\IDataAccessLayer\obj\Debug\net6.0\DataAccessInterfaces.csproj.CopyComplete
+C:\Users\egish\OneDrive\Desktop\new folder 2023\awaab\nov18\dotnet2FinalProject\IDataAccessLayer\obj\Debug\net6.0\DataAccessInterfaces.dll
+C:\Users\egish\OneDrive\Desktop\new folder 2023\awaab\nov18\dotnet2FinalProject\IDataAccessLayer\obj\Debug\net6.0\refint\DataAccessInterfaces.dll
+C:\Users\egish\OneDrive\Desktop\new folder 2023\awaab\nov18\dotnet2FinalProject\IDataAccessLayer\obj\Debug\net6.0\DataAccessInterfaces.pdb
+C:\Users\egish\OneDrive\Desktop\new folder 2023\awaab\nov18\dotnet2FinalProject\IDataAccessLayer\obj\Debug\net6.0\ref\DataAccessInterfaces.dll

@@ -1,5 +1,4 @@
-﻿using LogicLayerInterfaces;
-using DataAccessInterfaces;
+﻿using DataAccessInterfaces;
 using DataAccessLayer;
 using DataObjects;
 namespace LogicLayer
@@ -8,7 +7,8 @@ namespace LogicLayer
     {
 
         private IFlightAccessor flightAccessor;
-        public FlightManager() { 
+        public FlightManager()
+        {
             flightAccessor = new FlightAccessor();
         }
 
@@ -25,6 +25,15 @@ namespace LogicLayer
             result = flightAccessor.updateFlight(flight);
             return result;
         }
+<<<<<<< HEAD
+        public int deleteFlight(Flight flight)
+        {
+            int result = 0;
+            result = flightAccessor.updateFlight(flight);
+            return result;
+        }
+=======
+>>>>>>> f7d1e3700ebeb0de8e832e2f824d784ae8b58a67
 
         public List<string> getAllAirPortCodes()
         {
@@ -41,3 +50,12 @@ namespace LogicLayer
         }
     }
 }
+
+
+
+
+
+
+//what logic is supposed to do for the flight manager
+// add new flight, get all flights, get flight by id, update flight, delete flight
+// what is the purpose of logic layer and data access layer

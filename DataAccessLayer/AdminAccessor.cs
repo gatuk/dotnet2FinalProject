@@ -1,16 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using DataAccessInterfaces;
+﻿using DataAccessInterfaces;
 using DataObjects;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace DataAccessLayer
 {
-    public class AdminAccessor : AdminAccessorInterface
+    public class AdminAccessor : IAdminAccessor
     {
         public int deleteUser(User? user)
         {
@@ -29,7 +24,10 @@ namespace DataAccessLayer
 
                 throw;
             }
-            finally { conn.Close(); }
+            finally
+            {
+                conn.Close();
+            }
             return result;
         }
 
@@ -58,7 +56,7 @@ namespace DataAccessLayer
 
         public List<string> selectRoles()
         {
-            List<string > roles = new List<string>();
+            List<string> roles = new List<string>();
             SqlConnection conn = SqlConnectionProvider.GetConnection();
             var cmd = new SqlCommand("sp_select_roles", conn);
             cmd.CommandType = CommandType.StoredProcedure;
@@ -103,7 +101,7 @@ namespace DataAccessLayer
                 {
                     while (reader.Read())
                     {
-                       User user = new User();
+                        User user = new User();
                         user.UserId = reader.GetInt32(0);
                         user.UserName = reader.GetString(1);
                         user.Password = reader.GetString(2);
