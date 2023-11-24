@@ -123,10 +123,24 @@ namespace DataAccessFakes
 
             return rows;
         }
-        //awaab added this code
         public int verifyUser(string username, string password)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+            // This is not correct , but it is just for testing and ask awaab
+            int result = 0;
+            if (username == "customer" && password == "customer")
+            {
+                result = 1;
+            }
+            else if (username == "user" && password == "user")
+            {
+                result = 2;
+            }
+            else
+            {
+                result = 0;
+            }
+            return result;
         }
     }
 }

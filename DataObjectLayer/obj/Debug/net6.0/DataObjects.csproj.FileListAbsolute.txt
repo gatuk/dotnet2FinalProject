@@ -22,3 +22,15 @@ C:\Users\egish\OneDrive\Desktop\new folder 2023\awaab\nov18\dotnet2FinalProject\
 C:\Users\egish\OneDrive\Desktop\new folder 2023\awaab\nov18\dotnet2FinalProject\DataObjectLayer\obj\Debug\net6.0\refint\DataObjects.dll
 C:\Users\egish\OneDrive\Desktop\new folder 2023\awaab\nov18\dotnet2FinalProject\DataObjectLayer\obj\Debug\net6.0\DataObjects.pdb
 C:\Users\egish\OneDrive\Desktop\new folder 2023\awaab\nov18\dotnet2FinalProject\DataObjectLayer\obj\Debug\net6.0\ref\DataObjects.dll
+C:\Users\egish\OneDrive\Desktop\awaab2023\gishe\dotnet2FinalProject\DataObjectLayer\obj\Debug\net6.0\DataObjects.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\egish\OneDrive\Desktop\awaab2023\gishe\dotnet2FinalProject\DataObjectLayer\obj\Debug\net6.0\DataObjects.AssemblyInfoInputs.cache
+C:\Users\egish\OneDrive\Desktop\awaab2023\gishe\dotnet2FinalProject\DataObjectLayer\obj\Debug\net6.0\DataObjects.AssemblyInfo.cs
+C:\Users\egish\OneDrive\Desktop\awaab2023\gishe\dotnet2FinalProject\DataObjectLayer\obj\Debug\net6.0\DataObjects.csproj.CoreCompileInputs.cache
+C:\Users\egish\OneDrive\Desktop\awaab2023\gishe\dotnet2FinalProject\DataObjectLayer\obj\Debug\net6.0\DataObjects.sourcelink.json
+C:\Users\egish\OneDrive\Desktop\awaab2023\gishe\dotnet2FinalProject\DataObjectLayer\obj\Debug\net6.0\DataObjects.dll
+C:\Users\egish\OneDrive\Desktop\awaab2023\gishe\dotnet2FinalProject\DataObjectLayer\obj\Debug\net6.0\refint\DataObjects.dll
+C:\Users\egish\OneDrive\Desktop\awaab2023\gishe\dotnet2FinalProject\DataObjectLayer\obj\Debug\net6.0\DataObjects.pdb
+C:\Users\egish\OneDrive\Desktop\awaab2023\gishe\dotnet2FinalProject\DataObjectLayer\bin\Debug\net6.0\DataObjects.deps.json
+C:\Users\egish\OneDrive\Desktop\awaab2023\gishe\dotnet2FinalProject\DataObjectLayer\bin\Debug\net6.0\DataObjects.dll
+C:\Users\egish\OneDrive\Desktop\awaab2023\gishe\dotnet2FinalProject\DataObjectLayer\bin\Debug\net6.0\DataObjects.pdb
+C:\Users\egish\OneDrive\Desktop\awaab2023\gishe\dotnet2FinalProject\DataObjectLayer\obj\Debug\net6.0\ref\DataObjects.dll

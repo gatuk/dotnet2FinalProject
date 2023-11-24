@@ -1,6 +1,8 @@
-﻿using DataAccessInterfaces;
+﻿using DataAccessFakes;
+using DataAccessInterfaces;
 using DataAccessLayer;
 using DataObjects;
+
 namespace LogicLayer
 {
     public class FlightManager : IFlightManager
@@ -12,10 +14,15 @@ namespace LogicLayer
             flightAccessor = new FlightAccessor();
         }
 
+        public FlightManager(FlightAccessorFake flightAccessorFake)
+        {
+            flightAccessor = flightAccessorFake;
+        }
+
         public int addNewFlight(Flight flight)
         {
             int result = 0;
-            result = flightAccessor.insert(flight);
+            result = flightAccessor.Insert(flight);
             return result;
         }
 
@@ -25,15 +32,12 @@ namespace LogicLayer
             result = flightAccessor.updateFlight(flight);
             return result;
         }
-<<<<<<< HEAD
         public int deleteFlight(Flight flight)
         {
             int result = 0;
             result = flightAccessor.updateFlight(flight);
             return result;
         }
-=======
->>>>>>> f7d1e3700ebeb0de8e832e2f824d784ae8b58a67
 
         public List<string> getAllAirPortCodes()
         {
@@ -47,6 +51,11 @@ namespace LogicLayer
             List<Flight> flights = new List<Flight>();
             flights = flightAccessor.selectAllFlights();
             return flights;
+        }
+
+        public int deleteFlight(int flightId)
+        {
+            throw new NotImplementedException();
         }
     }
 }

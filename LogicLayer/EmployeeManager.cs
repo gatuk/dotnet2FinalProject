@@ -17,7 +17,7 @@ namespace LogicLayer
             return id;
         }
 
-        //gishe added code below here
+        //gishe added code below here and modified jim code 
         // the default constructor will use the database
         public EmployeeManager()    // uses the database
         {

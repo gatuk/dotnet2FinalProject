@@ -19,7 +19,7 @@ namespace DataAccessFakes
                 LastName = "Doe",
                 SeatNumber = "1A",
                 Email = "",
-                Roles = new List<string>()
+                Passengers = new List<string>()
             });
             fakePassengers.Add(new PassengerVM()
             {
@@ -29,11 +29,11 @@ namespace DataAccessFakes
                 LastName = "Doe",
                 SeatNumber = "1B",
                 Email = "",
-                Roles = new List<string>()
+                Passengers = new List<string>()
 
             });
         }
-
+        // this is jim 's code 
         public int AuthenticateUserWithEmailAndPasswordHash(string email, string passwordHash)
         {
             int numAuthenticated = 0;
@@ -77,14 +77,13 @@ namespace DataAccessFakes
             {
                 if (fakePassenger.PassengerID == PassengerID)
                 {
-                    roles = fakePassenger.Roles;
+                    roles = fakePassenger.Passengers;
                     break;
                 }
             }
             return roles;
 
         }
-
         public int UpdatePasswordHash(string email, string oldPasswordHash, string newPasswordHash)
         {
             int rows = 0;
@@ -107,6 +106,40 @@ namespace DataAccessFakes
 
             return rows;
 
+        }
+        public List<Passenger> GetAllPassengers()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Passenger GetPassengerById(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void InsertPassenger(Passenger passenger)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Passenger>? SelectAllPassengers()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Passenger SelectPassengerById(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void DeletePassenger(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void UpdatePassenger(Passenger passenger)
+        {
+            throw new NotImplementedException();
         }
     }
 }

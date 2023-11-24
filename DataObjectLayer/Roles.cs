@@ -8,5 +8,12 @@
         public string RoleType { get; set; }
 
 
+
+        public class RoleVM : Roles
+        {
+            public List<string> Roles { get; set; }
+        }
+
+
     }
 }

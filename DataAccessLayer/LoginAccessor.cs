@@ -1,17 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using DataAccessInterfaces;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using DataAccessInterfaces;
-using DataObjects;
 
 namespace DataAccessLayer
 {
     public class LoginAccessor : ILoginAccessor
-    {
+    {//awaab code start
         public string verifyUser(string username, string password)
         {
             string role = "not verify";
@@ -30,7 +24,8 @@ namespace DataAccessLayer
                 var reader = cmd.ExecuteReader();
                 if (reader.HasRows)
                 {
-                    while (reader.Read()) {
+                    while (reader.Read())
+                    {
                         role = reader.GetString(0);
                     }
                 }
@@ -40,7 +35,8 @@ namespace DataAccessLayer
 
                 throw;
             }
-            finally { 
+            finally
+            {
                 conn.Close();
             }
             return role;

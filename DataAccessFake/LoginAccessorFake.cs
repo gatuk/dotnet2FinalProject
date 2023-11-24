@@ -10,9 +10,13 @@ namespace DataAccessFakes
             {
                 return "admin";
             }
-            else if (username == "user" && password == "user")
+            else if (username == "airlinestaff" && password == "airlinestaff")
             {
-                return "user";
+                return "airlinestaff";
+            }
+            else if (username == "customer" && password == "customer")
+            {
+                return "customer";
             }
             else
             {

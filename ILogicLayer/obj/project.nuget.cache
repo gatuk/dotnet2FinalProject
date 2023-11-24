@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KZaTgeDbtbe1Wk6Rua3oaGlcHNtgONDvNX8EAHMwNC0V1TY6E7D2sAojcBHWzxZsNWOPMRBG2ZvWUTHPMUcxVQ==",
+  "dgSpecHash": "BON+d9FI0/HPFEmKmLe2R7xNt/C5ewURAh8EsLl/SjKRqBaqhT9wMJlIgm1pOlsk/hMeeO/XDfYm+Hh0EMtMZA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\ILogicLayer\\LogicLayerInterfaces.csproj",
+  "projectFilePath": "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\ILogicLayer\\LogicLayerInterfaces.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\egish\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\egish\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

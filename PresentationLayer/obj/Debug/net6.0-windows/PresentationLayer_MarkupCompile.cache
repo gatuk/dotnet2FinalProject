@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\PresentationLayer\obj\Debug\net6.0-windows\
+C:\Users\egish\OneDrive\Desktop\awaab2023\gishe\dotnet2FinalProject\PresentationLayer\obj\Debug\net6.0-windows\
 PresentationLayer
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\PresentationLayer\App.xaml
+C:\Users\egish\OneDrive\Desktop\awaab2023\gishe\dotnet2FinalProject\PresentationLayer\App.xaml
 38015263
 
 5-2067726846
-201-2058040003
+201-1944056701
 Admin\FrmNewUser.xaml;FrmFlights.xaml;MainWindow.xaml;
 
-False
+True
 

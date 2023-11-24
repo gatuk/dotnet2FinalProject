@@ -1,6 +1,5 @@
 ﻿using DataAccessInterfaces;
 using DataObjects;
-using static DataObjects.Flight;
 
 namespace DataAccessFakes
 {
@@ -49,100 +48,33 @@ namespace DataAccessFakes
             });
 
         }
-        public List<Flight> SelectFlightsByDepartureDate()
-        {
-            throw new NotImplementedException();
-        }
-
-<<<<<<< HEAD
-        public List<Flight> SelectFlightsByArrivalDate()
-        {
-            throw new NotImplementedException();
-        }
-
-        public List<Flight> SelectFlightsByDepartureCity()
-        {
-            throw new NotImplementedException();
-        }
-
-        public List<Flight> SelectFlightsByArrivalCity()
-        {
-            throw new NotImplementedException();
-        }
-
-        public List<Flight> SelectFlightsByDepartureTime()
-        {
-            throw new NotImplementedException();
-        }
-
-        public List<Flight> SelectFlightsByArrivalTime()
-        {
-            throw new NotImplementedException();
-        }
-
-        public List<Flight> SelectFlightsByAirline()
-        {
-            throw new NotImplementedException();
-        }
-
-        public List<Flight> SelectFlightsByFlightNumber()
-        {
-            throw new NotImplementedException();
-        }
-
         public List<Flight> SelectFlightsByAirplaneID()
         {
-            //throw new NotImplementedException();
+            ////throw new NotImplementedException();
+            List<Flight> flights = new List<Flight>();
             foreach (var item in fakeFlights)
             {
-                item.Flights = new List<string>();
-                item.Flights.Add(item.FlightNumber);
-                item.Flights.Add(item.Departure);
-                item.Flights.Add(item.Destination);
-                item.Flights.Add(item.DepartureTime.ToString());
-                item.Flights.Add(item.ArrivalTime.ToString());
-                item.Flights.Add(item.AvailableSeats.ToString());
-                item.Flights.Add(item.Price.ToString());
-                item.Flights.Add(item.Airline);
-                item.Flights.Add(item.DepartureDate.ToString());
-                item.Flights.Add(item.ArrivalDate.ToString());
-                item.Flights.Add(item.DepartureCity);
-                item.Flights.Add(item.ArrivalCity);
-                item.Flights.Add(item.AirplaneID.ToString());
-                item.Flights.Add(item.FlightId.ToString());
+                if (item.AirplaneID == item.AirplaneID)
+                {
+                    flights.Add(item);
+                }
             }
-            //return fakeFlights;
-            throw new NotImplementedException();
-        }
+            return flights;
 
+        }
         public List<Flight> selectAllFlights()
         {
             //throw new NotImplementedException();
+            List<Flight> flights = new List<Flight>();
             foreach (var item in fakeFlights)
             {
-                item.Flights = new List<string>();
-                item.Flights.Add(item.FlightNumber);
-                item.Flights.Add(item.Departure);
-                item.Flights.Add(item.Destination);
-                item.Flights.Add(item.DepartureTime.ToString());
-                item.Flights.Add(item.ArrivalTime.ToString());
-                item.Flights.Add(item.AvailableSeats.ToString());
-                item.Flights.Add(item.Price.ToString());
-                item.Flights.Add(item.Airline);
-                item.Flights.Add(item.DepartureDate.ToString());
-                item.Flights.Add(item.ArrivalDate.ToString());
-                item.Flights.Add(item.DepartureCity);
-                item.Flights.Add(item.ArrivalCity);
-                item.Flights.Add(item.AirplaneID.ToString());
-                item.Flights.Add(item.FlightId.ToString());
+                flights.Add(item);
             }
-            //return fakeFlights;
-            throw new NotImplementedException();
+            return flights;
 
 
         }
-
-        public int insert(Flight flight)
+        public int Insert(Flight flight)
         {
             //throw new NotImplementedException();
             int result = 0;
@@ -159,69 +91,35 @@ namespace DataAccessFakes
                 result = 1;
             }
             return result;
-=======
-        public int insert(Flight flight)
-        {
-            throw new NotImplementedException();
->>>>>>> f7d1e3700ebeb0de8e832e2f824d784ae8b58a67
         }
-
         public List<string> selectAllAirportCode()
         {
-<<<<<<< HEAD
             //throw new NotImplementedException();
-            List<string> airportCodes = new List<string>();
-            airportCodes.Add("BOI");
-            airportCodes.Add("SEA");
-            airportCodes.Add("LAX");
-            airportCodes.Add("SFO");
-            airportCodes.Add("DEN");
-            airportCodes.Add("SLC");
-            airportCodes.Add("LAS");
-            airportCodes.Add("PHX");
-            airportCodes.Add("PDX");
-            airportCodes.Add("MSP");
-            airportCodes.Add("ATL");
-            airportCodes.Add("ORD");
-            airportCodes.Add("DFW");
-            airportCodes.Add("IAH");
-            airportCodes.Add("JFK");
-            airportCodes.Add("MIA");
-            airportCodes.Add("BOS");
-            // return the list of airport codes
-            return airportCodes;
-=======
-            throw new NotImplementedException();
->>>>>>> f7d1e3700ebeb0de8e832e2f824d784ae8b58a67
+            List<string> airports = new List<string>();
+            foreach (var item in fakeFlights)
+            {
+                airports.Add(item.Departure);
+                airports.Add(item.Destination);
+            }
+            return airports;
         }
 
         public int updateFlight(Flight flight)
         {
-<<<<<<< HEAD
             //throw new NotImplementedException();
             int result = 0;
             foreach (var item in fakeFlights)
             {
                 if (item.FlightId == flight.FlightId)
                 {
-                    item.FlightNumber = flight.FlightNumber;
-                    item.Departure = flight.Departure;
-                    item.Destination = flight.Destination;
-                    item.DepartureTime = flight.DepartureTime;
-                    item.ArrivalTime = flight.ArrivalTime;
-                    item.AvailableSeats = flight.AvailableSeats;
-                    item.Price = flight.Price;
-                    item.Airline = flight.Airline;
-                    item.DepartureDate = flight.DepartureDate;
-                    item.ArrivalDate = flight.ArrivalDate;
-                    item.DepartureCity = flight.DepartureCity;
-                    item.ArrivalCity = flight.ArrivalCity;
-                    item.AirplaneID = flight.AirplaneID;
-                    //item.Flights = flight.Flights;
+                    fakeFlights.Remove(item);
+                    fakeFlights.Add((FlightVM)flight);
                     result = 1;
                 }
             }
             return result;
+
+
         }
         public int deleteFlight(Flight flight)
         {
@@ -236,10 +134,120 @@ namespace DataAccessFakes
                 }
             }
             return result;
-
-=======
-            throw new NotImplementedException();
->>>>>>> f7d1e3700ebeb0de8e832e2f824d784ae8b58a67
         }
+        public List<Flight> SelectFlightsByDepartureDate()
+        {
+            //throw new NotImplementedException();
+            List<Flight> flights = new List<Flight>();
+            foreach (var item in fakeFlights)
+            {
+                if (item.DepartureDate == item.DepartureDate)
+                {
+                    flights.Add(item);
+                }
+            }
+            return flights;
+        }
+        public List<Flight> SelectFlightsByArrivalDate()
+        {
+            //throw new NotImplementedException();
+            List<Flight> flights = new List<Flight>();
+            foreach (var item in fakeFlights)
+            {
+                if (item.ArrivalDate == item.ArrivalDate)
+                {
+                    flights.Add(item);
+                }
+            }
+            return flights;
+        }
+
+        public List<Flight> SelectFlightsByDepartureCity()
+        {
+            //throw new NotImplementedException();
+            List<Flight> flights = new List<Flight>();
+            foreach (var item in fakeFlights)
+            {
+                if (item.DepartureCity == item.DepartureCity)
+                {
+                    flights.Add(item);
+                }
+            }
+            return flights;
+        }
+
+        public List<Flight> SelectFlightsByArrivalCity()
+        {
+            //throw new NotImplementedException();
+            List<Flight> flights = new List<Flight>();
+            foreach (var item in fakeFlights)
+            {
+                if (item.ArrivalCity == item.ArrivalCity)
+                {
+                    flights.Add(item);
+                }
+            }
+            return flights;
+        }
+
+        public List<Flight> SelectFlightsByDepartureTime()
+        {
+            //throw new NotImplementedException();
+            List<Flight> flights = new List<Flight>();
+            foreach (var item in fakeFlights)
+            {
+                if (item.DepartureTime == item.DepartureTime)
+                {
+                    flights.Add(item);
+                }
+            }
+            return flights;
+        }
+
+        public List<Flight> SelectFlightsByArrivalTime()
+        {
+            //throw new NotImplementedException();
+            List<Flight> flights = new List<Flight>();
+            foreach (var item in fakeFlights)
+            {
+                if (item.ArrivalTime == item.ArrivalTime)
+                {
+                    flights.Add(item);
+                }
+            }
+            return flights;
+        }
+        public List<Flight> SelectFlightsByAirline(string targetAirline)
+        {
+            List<Flight> flights = new List<Flight>();
+
+            foreach (var item in fakeFlights)
+            {
+                if (item.Airline == targetAirline)
+                {
+                    flights.Add(item);
+                }
+            }
+
+            return flights;
+        }
+
+
+        public List<Flight> SelectFlightsByFlightNumber(string targetFlightNumber)
+        {
+            List<Flight> flights = new List<Flight>();
+
+            foreach (var item in fakeFlights)
+            {
+                if (item.FlightNumber == targetFlightNumber)
+                {
+                    flights.Add(item);
+                }
+            }
+
+            return flights;
+        }
+
+
     }
 }

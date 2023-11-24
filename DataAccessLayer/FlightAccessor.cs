@@ -8,11 +8,16 @@ namespace DataAccessLayer
     public class FlightAccessor : IFlightAccessor
     {
 
-        public int insert(Flight flight)
+        public int Insert(Flight flight)
         {
             int result = 0;
-            SqlConnection conn = SqlConnectionProvider.GetConnection();
-            var cmd = new SqlCommand("sp_insert_flight", conn);
+            // connection
+            var conn = SqlConnectionProvider.GetConnection();
+            // command text
+            var cmdText = "sp_insert_flight";
+            // command
+            var cmd = new SqlCommand(cmdText, conn);
+            // command type
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@FlightNumber", flight.FlightNumber);
             cmd.Parameters.AddWithValue("@Departure", flight.Departure);
@@ -39,8 +44,13 @@ namespace DataAccessLayer
         public List<string> selectAllAirportCode()
         {
             List<string> airPortCodes = new List<string>();
-            SqlConnection conn = SqlConnectionProvider.GetConnection();
-            SqlCommand cmd = new SqlCommand("sp_select_all_airport_codes", conn);
+            // connection
+            var conn = SqlConnectionProvider.GetConnection();
+            // command text
+            var cmdText = "sp_select_all_airport_codes";
+            // command
+            var cmd = new SqlCommand(cmdText, conn);
+            // command type
             cmd.CommandType = CommandType.StoredProcedure;
             try
             {
@@ -105,48 +115,6 @@ namespace DataAccessLayer
             finally { conn.Close(); }
             return flights;
         }
-        // stated here to be implemented in FlightAccessor.cs
-        public List<Flight> SelectFlightsByAirline()
-        {
-            List<Flight> flights = new List<Flight>();
-            SqlConnection conn = SqlConnectionProvider.GetConnection();
-            var cmd = new SqlCommand("select_flight_by_Airline", conn);
-            cmd.CommandType = CommandType.StoredProcedure;
-
-            try
-            {
-                conn.Open();
-                var reader = cmd.ExecuteReader();
-
-                while (reader.Read())
-                {
-                    Flight flight = new Flight
-                    {
-                        FlightId = (int)reader["FlightId"],
-                        FlightNumber = reader["FlightNumber"].ToString(),
-                        Departure = reader["Departure"].ToString(),
-                        Destination = reader["Destination"].ToString(),
-                        DepartureTime = (DateTime)reader["DepartureTime"],
-                        ArrivalTime = (DateTime)reader["ArrivalTime"],
-                        AvailableSeats = (int)reader["AvailableSeats"],
-                        Price = (decimal)reader["Price"],
-                        Airline = reader["Airline"].ToString()
-                    };
-
-                    flights.Add(flight);
-                }
-            }
-            catch (Exception)
-            {
-                throw;
-            }
-            finally
-            {
-                conn.Close();
-            }
-
-            return flights;
-        }
         public int updateFlight(Flight flight)
         {
             int result = 0;
@@ -200,6 +168,8 @@ namespace DataAccessLayer
 
             return result;
         }
+
+
         // stated here to be implemented in FlightAccessor.cs
         // the stored procedures named below are not created yet
         public List<Flight> SelectFlightsByDepartureDate()
@@ -447,8 +417,48 @@ namespace DataAccessLayer
 
             return flights;
         }
+        // stated here to be implemented in FlightAccessor.cs
+        public List<Flight> SelectFlightsByAirline()
+        {
+            List<Flight> flights = new List<Flight>();
+            SqlConnection conn = SqlConnectionProvider.GetConnection();
+            var cmd = new SqlCommand("select_flight_by_Airline", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
 
+            try
+            {
+                conn.Open();
+                var reader = cmd.ExecuteReader();
 
+                while (reader.Read())
+                {
+                    Flight flight = new Flight
+                    {
+                        FlightId = (int)reader["FlightId"],
+                        FlightNumber = reader["FlightNumber"].ToString(),
+                        Departure = reader["Departure"].ToString(),
+                        Destination = reader["Destination"].ToString(),
+                        DepartureTime = (DateTime)reader["DepartureTime"],
+                        ArrivalTime = (DateTime)reader["ArrivalTime"],
+                        AvailableSeats = (int)reader["AvailableSeats"],
+                        Price = (decimal)reader["Price"],
+                        Airline = reader["Airline"].ToString()
+                    };
+
+                    flights.Add(flight);
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+            return flights;
+        }
         public List<Flight> SelectFlightsByFlightNumber()
         {
             List<Flight> flights = new List<Flight>();
@@ -531,33 +541,5 @@ namespace DataAccessLayer
             return flights;
         }
 
-        public int updateFlight(Flight flight)
-        {
-            int result = 0;
-            SqlConnection conn = SqlConnectionProvider.GetConnection();
-            var cmd = new SqlCommand("sp_update_flight", conn);
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@FlightId", flight.FlightId);
-            cmd.Parameters.AddWithValue("@FlightNumber", flight.FlightNumber);
-            cmd.Parameters.AddWithValue("@Departure", flight.Departure);
-            cmd.Parameters.AddWithValue("@Destination", flight.Destination);
-            cmd.Parameters.AddWithValue("@DepartureTime", flight.DepartureTime);
-            cmd.Parameters.AddWithValue("@ArrivalTime", flight.ArrivalTime);
-            cmd.Parameters.AddWithValue("@AvailableSeats", flight.AvailableSeats);
-            cmd.Parameters.AddWithValue("@Price", flight.Price);
-            cmd.Parameters.AddWithValue("@Airline", flight.Airline);
-            try
-            {
-                conn.Open();
-                result = cmd.ExecuteNonQuery();
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
-            finally { conn.Close(); }
-            return result;
-        }
     }
 }

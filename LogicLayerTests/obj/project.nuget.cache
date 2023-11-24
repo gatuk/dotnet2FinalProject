@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vqwwH/gPwN2L/Hg/gE/wuGmQMrJ242TGGu/vGHSnA9ZGrbDy+B6q5il99ENVHaIj1iDUz+gxcqCu+gtle0SowA==",
+  "dgSpecHash": "bRVBkqAWI6nI0n62uFNmsLku0cXqnwdLSYP5qGqD4ubccUFyTYRkJxKN91++po3RGitiqYnEH4Cj8o17gXRrBw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\LogicLayerTests\\LogicLayerTests.csproj",
+  "projectFilePath": "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\LogicLayerTests\\LogicLayerTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\egish\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
     "C:\\Users\\egish\\.nuget\\packages\\microsoft.codecoverage\\17.1.0\\microsoft.codecoverage.17.1.0.nupkg.sha512",

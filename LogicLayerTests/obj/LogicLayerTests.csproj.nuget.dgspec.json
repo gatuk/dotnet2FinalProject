@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\LogicLayerTests\\LogicLayerTests.csproj": {}
+    "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\LogicLayerTests\\LogicLayerTests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\DataAccessFake\\DataAccessFakes.csproj": {
+    "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\DataAccessFake\\DataAccessFakes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\DataAccessFake\\DataAccessFakes.csproj",
+        "projectUniqueName": "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\DataAccessFake\\DataAccessFakes.csproj",
         "projectName": "DataAccessFakes",
-        "projectPath": "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\DataAccessFake\\DataAccessFakes.csproj",
+        "projectPath": "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\DataAccessFake\\DataAccessFakes.csproj",
         "packagesPath": "C:\\Users\\egish\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\DataAccessFake\\obj\\",
+        "outputPath": "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\DataAccessFake\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,11 +32,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\DataObjectLayer\\DataObjects.csproj": {
-                "projectPath": "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\DataObjectLayer\\DataObjects.csproj"
+              "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\DataObjectLayer\\DataObjects.csproj": {
+                "projectPath": "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\DataObjectLayer\\DataObjects.csproj"
               },
-              "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\IDataAccessLayer\\DataAccessInterfaces.csproj": {
-                "projectPath": "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\IDataAccessLayer\\DataAccessInterfaces.csproj"
+              "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\IDataAccessLayer\\DataAccessInterfaces.csproj": {
+                "projectPath": "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\IDataAccessLayer\\DataAccessInterfaces.csproj"
               }
             }
           }
@@ -70,14 +70,14 @@
         }
       }
     },
-    "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\DataAccessLayer\\DataAccessLayer.csproj": {
+    "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\DataAccessLayer\\DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\DataAccessLayer\\DataAccessLayer.csproj",
         "projectName": "DataAccessLayer",
-        "projectPath": "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectPath": "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\DataAccessLayer\\DataAccessLayer.csproj",
         "packagesPath": "C:\\Users\\egish\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\DataAccessLayer\\obj\\",
+        "outputPath": "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -98,11 +98,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\DataObjectLayer\\DataObjects.csproj": {
-                "projectPath": "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\DataObjectLayer\\DataObjects.csproj"
+              "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\DataObjectLayer\\DataObjects.csproj": {
+                "projectPath": "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\DataObjectLayer\\DataObjects.csproj"
               },
-              "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\IDataAccessLayer\\DataAccessInterfaces.csproj": {
-                "projectPath": "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\IDataAccessLayer\\DataAccessInterfaces.csproj"
+              "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\IDataAccessLayer\\DataAccessInterfaces.csproj": {
+                "projectPath": "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\IDataAccessLayer\\DataAccessInterfaces.csproj"
               }
             }
           }
@@ -142,14 +142,14 @@
         }
       }
     },
-    "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\DataObjectLayer\\DataObjects.csproj": {
+    "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\DataObjectLayer\\DataObjects.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\DataObjectLayer\\DataObjects.csproj",
+        "projectUniqueName": "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\DataObjectLayer\\DataObjects.csproj",
         "projectName": "DataObjects",
-        "projectPath": "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\DataObjectLayer\\DataObjects.csproj",
+        "projectPath": "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\DataObjectLayer\\DataObjects.csproj",
         "packagesPath": "C:\\Users\\egish\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\DataObjectLayer\\obj\\",
+        "outputPath": "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\DataObjectLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -201,14 +201,14 @@
         }
       }
     },
-    "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\IDataAccessLayer\\DataAccessInterfaces.csproj": {
+    "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\IDataAccessLayer\\DataAccessInterfaces.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\IDataAccessLayer\\DataAccessInterfaces.csproj",
+        "projectUniqueName": "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\IDataAccessLayer\\DataAccessInterfaces.csproj",
         "projectName": "DataAccessInterfaces",
-        "projectPath": "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\IDataAccessLayer\\DataAccessInterfaces.csproj",
+        "projectPath": "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\IDataAccessLayer\\DataAccessInterfaces.csproj",
         "packagesPath": "C:\\Users\\egish\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\IDataAccessLayer\\obj\\",
+        "outputPath": "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\IDataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -229,8 +229,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\DataObjectLayer\\DataObjects.csproj": {
-                "projectPath": "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\DataObjectLayer\\DataObjects.csproj"
+              "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\DataObjectLayer\\DataObjects.csproj": {
+                "projectPath": "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\DataObjectLayer\\DataObjects.csproj"
               }
             }
           }
@@ -264,14 +264,14 @@
         }
       }
     },
-    "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\ILogicLayer\\LogicLayerInterfaces.csproj": {
+    "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\ILogicLayer\\LogicLayerInterfaces.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\ILogicLayer\\LogicLayerInterfaces.csproj",
+        "projectUniqueName": "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\ILogicLayer\\LogicLayerInterfaces.csproj",
         "projectName": "LogicLayerInterfaces",
-        "projectPath": "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\ILogicLayer\\LogicLayerInterfaces.csproj",
+        "projectPath": "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\ILogicLayer\\LogicLayerInterfaces.csproj",
         "packagesPath": "C:\\Users\\egish\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\ILogicLayer\\obj\\",
+        "outputPath": "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\ILogicLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -292,14 +292,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\DataAccessLayer\\DataAccessLayer.csproj": {
-                "projectPath": "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\DataAccessLayer\\DataAccessLayer.csproj"
+              "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\DataAccessLayer\\DataAccessLayer.csproj"
               },
-              "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\DataObjectLayer\\DataObjects.csproj": {
-                "projectPath": "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\DataObjectLayer\\DataObjects.csproj"
+              "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\DataObjectLayer\\DataObjects.csproj": {
+                "projectPath": "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\DataObjectLayer\\DataObjects.csproj"
               },
-              "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\IDataAccessLayer\\DataAccessInterfaces.csproj": {
-                "projectPath": "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\IDataAccessLayer\\DataAccessInterfaces.csproj"
+              "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\IDataAccessLayer\\DataAccessInterfaces.csproj": {
+                "projectPath": "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\IDataAccessLayer\\DataAccessInterfaces.csproj"
               }
             }
           }
@@ -333,14 +333,14 @@
         }
       }
     },
-    "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\LogicLayerTests\\LogicLayerTests.csproj": {
+    "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\LogicLayerTests\\LogicLayerTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\LogicLayerTests\\LogicLayerTests.csproj",
+        "projectUniqueName": "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\LogicLayerTests\\LogicLayerTests.csproj",
         "projectName": "LogicLayerTests",
-        "projectPath": "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\LogicLayerTests\\LogicLayerTests.csproj",
+        "projectPath": "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\LogicLayerTests\\LogicLayerTests.csproj",
         "packagesPath": "C:\\Users\\egish\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\LogicLayerTests\\obj\\",
+        "outputPath": "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\LogicLayerTests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -361,17 +361,20 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\DataAccessFake\\DataAccessFakes.csproj": {
-                "projectPath": "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\DataAccessFake\\DataAccessFakes.csproj"
+              "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\DataAccessFake\\DataAccessFakes.csproj": {
+                "projectPath": "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\DataAccessFake\\DataAccessFakes.csproj"
               },
-              "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\DataObjectLayer\\DataObjects.csproj": {
-                "projectPath": "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\DataObjectLayer\\DataObjects.csproj"
+              "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\DataObjectLayer\\DataObjects.csproj": {
+                "projectPath": "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\DataObjectLayer\\DataObjects.csproj"
               },
-              "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\IDataAccessLayer\\DataAccessInterfaces.csproj": {
-                "projectPath": "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\IDataAccessLayer\\DataAccessInterfaces.csproj"
+              "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\IDataAccessLayer\\DataAccessInterfaces.csproj": {
+                "projectPath": "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\IDataAccessLayer\\DataAccessInterfaces.csproj"
               },
-              "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\LogicLayer\\LogicLayer.csproj": {
-                "projectPath": "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\LogicLayer\\LogicLayer.csproj"
+              "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\ILogicLayer\\LogicLayerInterfaces.csproj": {
+                "projectPath": "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\ILogicLayer\\LogicLayerInterfaces.csproj"
+              },
+              "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\LogicLayer\\LogicLayer.csproj": {
+                "projectPath": "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\LogicLayer\\LogicLayer.csproj"
               }
             }
           }
@@ -431,14 +434,14 @@
         }
       }
     },
-    "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\LogicLayer\\LogicLayer.csproj": {
+    "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\LogicLayer\\LogicLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\LogicLayer\\LogicLayer.csproj",
+        "projectUniqueName": "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\LogicLayer\\LogicLayer.csproj",
         "projectName": "LogicLayer",
-        "projectPath": "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\LogicLayer\\LogicLayer.csproj",
+        "projectPath": "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\LogicLayer\\LogicLayer.csproj",
         "packagesPath": "C:\\Users\\egish\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\LogicLayer\\obj\\",
+        "outputPath": "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\LogicLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -459,20 +462,20 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\DataAccessFake\\DataAccessFakes.csproj": {
-                "projectPath": "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\DataAccessFake\\DataAccessFakes.csproj"
+              "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\DataAccessFake\\DataAccessFakes.csproj": {
+                "projectPath": "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\DataAccessFake\\DataAccessFakes.csproj"
               },
-              "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\DataAccessLayer\\DataAccessLayer.csproj": {
-                "projectPath": "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\DataAccessLayer\\DataAccessLayer.csproj"
+              "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\DataAccessLayer\\DataAccessLayer.csproj"
               },
-              "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\DataObjectLayer\\DataObjects.csproj": {
-                "projectPath": "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\DataObjectLayer\\DataObjects.csproj"
+              "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\DataObjectLayer\\DataObjects.csproj": {
+                "projectPath": "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\DataObjectLayer\\DataObjects.csproj"
               },
-              "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\IDataAccessLayer\\DataAccessInterfaces.csproj": {
-                "projectPath": "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\IDataAccessLayer\\DataAccessInterfaces.csproj"
+              "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\IDataAccessLayer\\DataAccessInterfaces.csproj": {
+                "projectPath": "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\IDataAccessLayer\\DataAccessInterfaces.csproj"
               },
-              "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\ILogicLayer\\LogicLayerInterfaces.csproj": {
-                "projectPath": "C:\\Users\\egish\\OneDrive\\Desktop\\new folder 2023\\awaab\\nov18\\dotnet2FinalProject\\ILogicLayer\\LogicLayerInterfaces.csproj"
+              "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\ILogicLayer\\LogicLayerInterfaces.csproj": {
+                "projectPath": "C:\\Users\\egish\\OneDrive\\Desktop\\awaab2023\\gishe\\dotnet2FinalProject\\ILogicLayer\\LogicLayerInterfaces.csproj"
               }
             }
           }

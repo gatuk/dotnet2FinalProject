@@ -67,3 +67,27 @@ C:\Users\egish\OneDrive\Desktop\new folder 2023\awaab\nov18\dotnet2FinalProject\
 C:\Users\egish\OneDrive\Desktop\new folder 2023\awaab\nov18\dotnet2FinalProject\LogicLayer\bin\Debug\net6.0\LogicLayerInterfaces.pdb
 C:\Users\egish\OneDrive\Desktop\new folder 2023\awaab\nov18\dotnet2FinalProject\LogicLayer\obj\Debug\net6.0\LogicLayer.csproj.CopyComplete
 C:\Users\egish\OneDrive\Desktop\new folder 2023\awaab\nov18\dotnet2FinalProject\LogicLayer\obj\Debug\net6.0\ref\LogicLayer.dll
+C:\Users\egish\OneDrive\Desktop\awaab2023\gishe\dotnet2FinalProject\LogicLayer\obj\Debug\net6.0\LogicLayer.csproj.AssemblyReference.cache
+C:\Users\egish\OneDrive\Desktop\awaab2023\gishe\dotnet2FinalProject\LogicLayer\obj\Debug\net6.0\LogicLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\egish\OneDrive\Desktop\awaab2023\gishe\dotnet2FinalProject\LogicLayer\obj\Debug\net6.0\LogicLayer.AssemblyInfoInputs.cache
+C:\Users\egish\OneDrive\Desktop\awaab2023\gishe\dotnet2FinalProject\LogicLayer\obj\Debug\net6.0\LogicLayer.AssemblyInfo.cs
+C:\Users\egish\OneDrive\Desktop\awaab2023\gishe\dotnet2FinalProject\LogicLayer\obj\Debug\net6.0\LogicLayer.csproj.CoreCompileInputs.cache
+C:\Users\egish\OneDrive\Desktop\awaab2023\gishe\dotnet2FinalProject\LogicLayer\obj\Debug\net6.0\LogicLayer.sourcelink.json
+C:\Users\egish\OneDrive\Desktop\awaab2023\gishe\dotnet2FinalProject\LogicLayer\obj\Debug\net6.0\LogicLayer.dll
+C:\Users\egish\OneDrive\Desktop\awaab2023\gishe\dotnet2FinalProject\LogicLayer\obj\Debug\net6.0\refint\LogicLayer.dll
+C:\Users\egish\OneDrive\Desktop\awaab2023\gishe\dotnet2FinalProject\LogicLayer\obj\Debug\net6.0\LogicLayer.pdb
+C:\Users\egish\OneDrive\Desktop\awaab2023\gishe\dotnet2FinalProject\LogicLayer\bin\Debug\net6.0\LogicLayer.deps.json
+C:\Users\egish\OneDrive\Desktop\awaab2023\gishe\dotnet2FinalProject\LogicLayer\bin\Debug\net6.0\LogicLayer.dll
+C:\Users\egish\OneDrive\Desktop\awaab2023\gishe\dotnet2FinalProject\LogicLayer\bin\Debug\net6.0\LogicLayer.pdb
+C:\Users\egish\OneDrive\Desktop\awaab2023\gishe\dotnet2FinalProject\LogicLayer\bin\Debug\net6.0\DataAccessFakes.dll
+C:\Users\egish\OneDrive\Desktop\awaab2023\gishe\dotnet2FinalProject\LogicLayer\bin\Debug\net6.0\DataAccessInterfaces.dll
+C:\Users\egish\OneDrive\Desktop\awaab2023\gishe\dotnet2FinalProject\LogicLayer\bin\Debug\net6.0\DataAccessLayer.dll
+C:\Users\egish\OneDrive\Desktop\awaab2023\gishe\dotnet2FinalProject\LogicLayer\bin\Debug\net6.0\DataObjects.dll
+C:\Users\egish\OneDrive\Desktop\awaab2023\gishe\dotnet2FinalProject\LogicLayer\bin\Debug\net6.0\LogicLayerInterfaces.dll
+C:\Users\egish\OneDrive\Desktop\awaab2023\gishe\dotnet2FinalProject\LogicLayer\bin\Debug\net6.0\DataAccessFakes.pdb
+C:\Users\egish\OneDrive\Desktop\awaab2023\gishe\dotnet2FinalProject\LogicLayer\bin\Debug\net6.0\DataAccessLayer.pdb
+C:\Users\egish\OneDrive\Desktop\awaab2023\gishe\dotnet2FinalProject\LogicLayer\bin\Debug\net6.0\DataObjects.pdb
+C:\Users\egish\OneDrive\Desktop\awaab2023\gishe\dotnet2FinalProject\LogicLayer\bin\Debug\net6.0\DataAccessInterfaces.pdb
+C:\Users\egish\OneDrive\Desktop\awaab2023\gishe\dotnet2FinalProject\LogicLayer\bin\Debug\net6.0\LogicLayerInterfaces.pdb
+C:\Users\egish\OneDrive\Desktop\awaab2023\gishe\dotnet2FinalProject\LogicLayer\obj\Debug\net6.0\LogicLayer.csproj.CopyComplete
+C:\Users\egish\OneDrive\Desktop\awaab2023\gishe\dotnet2FinalProject\LogicLayer\obj\Debug\net6.0\ref\LogicLayer.dll
