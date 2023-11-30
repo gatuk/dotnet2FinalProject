@@ -189,5 +189,11 @@ namespace PresentationLayer
             lblDeleteNote.Content = "Flight deleted";
             showFlightData();
         }
+
+        private void btnAddPassenger_Click(object sender, RoutedEventArgs e)
+        {
+            FrmPassenger frmPassenger = new FrmPassenger();
+            frmPassenger.ShowDialog();
+        }
     }
 }

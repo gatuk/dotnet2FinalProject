@@ -75,3 +75,5 @@ D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\PresentationLayer\obj\
 D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\PresentationLayer\obj\Debug\net6.0-windows\Admin\FrmNewUser.baml
 D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\PresentationLayer\obj\Debug\net6.0-windows\FrmFlights.g.cs
 D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\PresentationLayer\obj\Debug\net6.0-windows\FrmFlights.baml
+D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\PresentationLayer\obj\Debug\net6.0-windows\FrmPassenger.g.cs
+D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\PresentationLayer\obj\Debug\net6.0-windows\FrmPassenger.baml
