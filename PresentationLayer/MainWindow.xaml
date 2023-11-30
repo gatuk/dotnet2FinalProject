@@ -132,7 +132,16 @@
                 </Grid>
             </Grid>
             <Grid x:Name="gridCustomer">
-                <Label Content="Customer"/>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition/>
+                    <RowDefinition Height="40"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0"></Grid>
+                <Grid Grid.Row="1">
+                    <DataGrid x:Name="dgCustomers"/>
+                </Grid>
+                <Grid Grid.Row="2"></Grid>
             </Grid>
         </Grid>
         <Grid Grid.Row="2" Name="Footer"></Grid>

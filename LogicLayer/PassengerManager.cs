@@ -1,5 +1,6 @@
 ﻿using DataAccessLayer;
 using DataAccessInterfaces;
+using DataObjects;
 
 namespace LogicLayer
 {
@@ -38,5 +39,11 @@ namespace LogicLayer
 			_passengerAccessor = passengerAccessor;
 		}
 
-	}
+        public List<Passenger> getAllPassengers()
+        {
+            List<Passenger> passengers = new List<Passenger>();
+			passengers = _passengerAccessor.selectAllPassengers();
+			return passengers;
+        }
+    }
 }

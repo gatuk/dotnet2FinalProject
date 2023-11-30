@@ -50,19 +50,14 @@ INSERT INTO [dbo].[Users]
 		('user1', 'password','Admin'),
 		('user2', 'password','AirlineStaff'),
 		('user3', 'password','Customer')
-GO
-print '' print '*** Creating sp_verify_user ***'
-GO
-CREATE PROCEDURE [dbo].[sp_verify_user]
-(@username NVARCHAR(50),@password NVARCHAR(255))
-AS 	
-	BEGIN
-		SELECT [Role]
-		FROM [Users]
-		WHERE	Username = @username
-		AND	Password = @password
-	END
-GO
+
+
+
+
+
+
+
+
 print '' print '*** Creating table Airport ***'
 GO
 CREATE TABLE [dbo].[Airport] (
@@ -86,7 +81,7 @@ GO
 print '' print '***create table Flight ***'	
 
 CREATE TABLE  [dbo].[Flight] (
-    [FlightID] [int] IDENTITY(100000, 1) 	NOT NULL,
+    [FlightID] [int] IDENTITY(100000, 1) PRIMARY KEY ,
     [FlightNumber] [nvarchar](10) NOT NULL,
     [Airline] [nvarchar](255) NOT NULL,
     [DepartureAirport] [nvarchar](10) NOT NULL,
@@ -118,6 +113,85 @@ INSERT INTO [dbo].[Flight]
 		('AA106', 'American Airlines', 'JFK', 'LAX', '2019-12-01 20:00:00', '2019-12-01 23:00:00', 100),
 		('AA107', 'American Airlines', 'JFK', 'LAX', '2019-12-01 22:00:00', '2019-12-02 01:00:00', 100),
 		('AA108', 'American Airlines', 'JFK', 'LAX', '2019-12-02 00:00:00', '2019-12-02 03:00:00', 100)
+GO
+
+
+GO
+print '' print '*** Creating table booking ***'
+GO
+CREATE TABLE Booking (
+		BookingID INT IDENTITY(100000, 1) PRIMARY KEY,
+		UserID INT NOT NULL,
+		FlightID int NOT NULL,
+		BookingDate DATETIME NOT NULL,
+		TotalPrice DECIMAL(9, 2) NOT NULL,
+		CONSTRAINT [fk_Booking_UserID] FOREIGN KEY ([UserID]) REFERENCES Users (UserID),
+		CONSTRAINT [fk_Booking_FlightID] FOREIGN KEY ([FlightID]) REFERENCES [dbo].[Flight] ([FlightID])
+)
+GO
+print '' print '*** inserting booking test records ***'
+GO
+INSERT INTO Booking
+(UserID, FlightID, BookingDate, TotalPrice)
+	VALUES
+		(100000, 100000, '2019-12-01 00:00:00', 100.00),
+		(100000, 100001, '2019-12-01 00:00:00', 100.00),
+		(100000, 100002, '2019-12-01 00:00:00', 100.00),
+		(100000, 100003, '2019-12-01 00:00:00', 100.00),
+		(100000, 100004, '2019-12-01 00:00:00', 100.00),
+		(100000, 100005, '2019-12-01 00:00:00', 100.00),
+		(100000, 100006, '2019-12-01 00:00:00', 100.00),
+		(100000, 100007, '2019-12-01 00:00:00', 100.00),
+		(100000, 100008, '2019-12-01 00:00:00', 100.00)
+GO
+
+print '' print '*** Creating table Passenger ***'
+GO
+CREATE TABLE Passenger (
+		PassengerID INT IDENTITY(100000, 1) PRIMARY KEY,
+		FlightID int NOT NULL,
+		FirstName VARCHAR(255) NOT NULL,
+		LastName VARCHAR(255) NOT NULL,
+		SeatNumber VARCHAR(255)  NOT NULL,
+		Email VARCHAR(255) NOT NULL,
+		Phone VARCHAR(255) NOT NULL,
+		Address VARCHAR(255) NOT NULL,
+		City VARCHAR(255) NOT NULL,
+		State VARCHAR(255) NOT NULL,
+		ZipCode int NOT NULL,
+		IsCheckedIn bit default 1,
+		IsMinor bit default 1,
+		IsSpecialNeeds bit default 1,
+		Active bit default 1,
+		CONSTRAINT [fk_Passenger_FlightID] FOREIGN KEY ([FlightID]) REFERENCES [dbo].[Flight] ([FlightID])
+);
+
+
+
+GO
+print '' print '*** inserting passenger test records ***'
+GO
+INSERT INTO Passenger
+(FlightID,FirstName, LastName, SeatNumber,Email, Phone, Address, City, State, ZipCode)
+	VALUES
+		(100000,'Gish', 'Basheer','25', ' [email protected] ', '1234567899', '123 Main St', 'Iowa City', 'IA', 52404),
+		(100001,'John', 'Doe','26', ' [email protected] ', '1234567890', '123 Main St', 'New York', 'NY', 10001),
+		(100000,'p1', 'd1','27', ' [email protected] ', '1234567898', '12 Main St', 'cedar rapids', 'IA', 52401)
+GO
+
+
+GO
+print '' print '*** Creating sp_verify_user ***'
+GO
+CREATE PROCEDURE [dbo].[sp_verify_user]
+(@username NVARCHAR(50),@password NVARCHAR(255))
+AS 	
+	BEGIN
+		SELECT [Role]
+		FROM [Users]
+		WHERE	Username = @username
+		AND	Password = @password
+	END
 GO
 print '' print '*** Creating sp_select_users ***'
 GO
@@ -236,5 +310,14 @@ AS
 	BEGIN
 		DELETE FROM [dbo].[Flight] WHERE [FlightID] = @FlightId;
 	return @@ROWCOUNT
+	END
+GO
+print '' print '*** Creating sp_select_all_passengers ***'
+GO
+CREATE PROCEDURE [dbo].[sp_select_all_passengers]
+AS 	
+	BEGIN
+		SELECT PassengerID,FlightID,FirstName,LastName,SeatNumber,Email,Phone,Address,City,State,ZipCode,IsCheckedIn,IsMinor,IsSpecialNeeds,Active
+		FROM Passenger;
 	END
 GO

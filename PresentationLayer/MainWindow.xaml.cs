@@ -26,12 +26,14 @@ namespace PresentationLayer
         private LoginManagerInterface loginManager;
         private AdminManagerInterface adminManager;
         private IFlightManager flightManager;
+        private IPassengerManager passengerManager;
         public MainWindow()
         {
             InitializeComponent();
             loginManager = new LoginManager();
             adminManager = new AdminManager();
             flightManager = new FlightManager();
+            passengerManager = new PassengerManager();
             gridMain.Visibility = Visibility.Collapsed;
         }
 
@@ -76,7 +78,15 @@ namespace PresentationLayer
                 gridAdmin.Visibility = Visibility.Collapsed;
                 gridAirlineStaff.Visibility = Visibility.Collapsed;
                 gridCustomer.Visibility = Visibility.Visible;
+                showCustomerData();
             }
+        }
+
+        private void showCustomerData()
+        {
+            List<Passenger> passengers = new List<Passenger>();
+            passengers = passengerManager.getAllPassengers();
+            dgCustomers.ItemsSource = passengers;
         }
 
         private void showFlightData()

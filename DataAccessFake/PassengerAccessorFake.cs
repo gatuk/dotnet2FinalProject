@@ -50,6 +50,11 @@ namespace DataAccessFakes
             return numAuthenticated;    // should be 1 or 0
         }
 
+        public List<Passenger> selectAllPassengers()
+        {
+            throw new NotImplementedException();
+        }
+
         public PassengerVM SelectPassengerVMByEmail(string email)
         {
             PassengerVM pass = null;
