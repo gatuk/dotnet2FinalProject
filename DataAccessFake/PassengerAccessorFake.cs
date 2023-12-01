@@ -48,6 +48,11 @@ namespace DataAccessFakes
             }
 
             return numAuthenticated;    // should be 1 or 0
+        }//return;
+
+        public int insertPassenger(Passenger passenger)
+        {
+            throw new NotImplementedException();
         }
 
         public List<Passenger> selectAllPassengers()

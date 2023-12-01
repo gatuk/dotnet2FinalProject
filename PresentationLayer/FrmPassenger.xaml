@@ -264,7 +264,7 @@
                         <Label x:Name="lblFlightID" Content="FlightID"/>
                     </Grid>
                     <Grid Grid.Column="1">
-                        <TextBox x:Name="txtFlightID"/>
+                        <ComboBox x:Name="comboFlightID"/>
                     </Grid>
                 </Grid>
                 <Grid Grid.Row="1">
@@ -334,7 +334,7 @@
                     </Grid.ColumnDefinitions>
                     <Grid Grid.Column="0"></Grid>
                     <Grid Grid.Column="1">
-                        <Button x:Name="btnSubmit" Content="Submit"/>
+                        <Button x:Name="btnSubmit" Content="Submit" Click="btnSubmit_Click"/>
                     </Grid>
                 </Grid>
                 <Grid Grid.Row="7">

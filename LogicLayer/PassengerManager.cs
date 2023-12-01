@@ -16,28 +16,17 @@ namespace LogicLayer
 			_passengerAccessor = new PassengerAccessor();
 		}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 		public PassengerManager(IPassengerAccessor passengerAccessor)
 		{
 			_passengerAccessor = passengerAccessor;
 		}
+
+        public int addPassenger(Passenger passenger)
+        {
+			int result = 0;
+			result = _passengerAccessor.insertPassenger(passenger);
+			return result;
+        }
 
         public List<Passenger> getAllPassengers()
         {

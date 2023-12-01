@@ -9,11 +9,12 @@ namespace DataAccessInterfaces
 		//int UpdatePassenger(Passenger oldPassenger, Passenger newPassenger);
 		//int DeletePassenger(Passenger passenger);
 
-		int AuthenticateUserWithEmailAndPasswordHash(string email, string passwordHash);
+		public int AuthenticateUserWithEmailAndPasswordHash(string email, string passwordHash);
+        public int insertPassenger(Passenger passenger);
         public List<Passenger> selectAllPassengers();
-        PassengerVM SelectPassengerVMByEmail(string email);
-		List<string> SelectRolesByUser(int employeeID);
-		int UpdatePasswordHash(string email, string oldPasswordHash, string newPasswordHash);
+        public PassengerVM SelectPassengerVMByEmail(string email);
+		public List<string> SelectRolesByUser(int employeeID);
+		public int UpdatePasswordHash(string email, string oldPasswordHash, string newPasswordHash);
 	}
 
 }

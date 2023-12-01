@@ -321,3 +321,14 @@ AS
 		FROM Passenger;
 	END
 GO
+print '' print '*** Creating sp_insert_passenger ***'
+GO
+CREATE PROCEDURE [dbo].[sp_insert_passenger]
+(@FlightID int,@FirstName VARCHAR(255),@LastName VARCHAR(255),@SeatNumber VARCHAR(255),@Email VARCHAR(255),@PhoneNumber VARCHAR(255),@Address VARCHAR(255),@City VARCHAR(255),@State VARCHAR(255),@ZipCode int,@IsCheckedIn bit,@IsMinor bit,@IsSpecialNeeds bit,@Active bit)
+AS 	
+	BEGIN
+		INSERT INTO Passenger
+			(FlightID,FirstName, LastName, SeatNumber,Email, Phone, Address, City, State, ZipCode,IsCheckedIn,IsMinor,IsSpecialNeeds,Active)
+		Values(@FlightID,@FirstName,@LastName,@SeatNumber,@Email,@PhoneNumber,@Address,@City,@State,@ZipCode,@IsCheckedIn,@IsMinor,@IsSpecialNeeds, 			@Active)
+	END
+GO

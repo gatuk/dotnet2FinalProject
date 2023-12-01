@@ -13,6 +13,44 @@ namespace DataAccessLayer
             return result;
 		}
 
+        public int insertPassenger(Passenger passenger)
+        {
+            int result = 0;
+            SqlConnection conn = SqlConnectionProvider.GetConnection();
+            SqlCommand cmd = new SqlCommand("sp_insert_passenger", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@FlightID", passenger.FlightID);
+            cmd.Parameters.AddWithValue("@FirstName", passenger.FirstName);
+            cmd.Parameters.AddWithValue("@LastName", passenger.LastName);
+            cmd.Parameters.AddWithValue("@SeatNumber", passenger.SeatNumber);
+            cmd.Parameters.AddWithValue("@Email", passenger.Email);
+            cmd.Parameters.AddWithValue("@PhoneNumber", passenger.PhoneNumber);
+            cmd.Parameters.AddWithValue("@Address", passenger.Address);
+            cmd.Parameters.AddWithValue("@City", passenger.City);
+            cmd.Parameters.AddWithValue("@State", passenger.State);
+            cmd.Parameters.AddWithValue("@ZipCode", passenger.ZipCode);
+            cmd.Parameters.AddWithValue("@IsCheckedIn", passenger.IsCheckedIn);
+            cmd.Parameters.AddWithValue("@IsMinor", passenger.IsMinor);
+            cmd.Parameters.AddWithValue("@IsSpecialNeeds", passenger.IsSpecialNeeds);
+            cmd.Parameters.AddWithValue("@Active", passenger.Active);
+
+
+            try
+            {
+                conn.Open();
+                result = cmd.ExecuteNonQuery();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally { conn.Close(); }
+
+            return result;
+
+        }
+
         public List<Passenger> selectAllPassengers()
         {
             List<Passenger> passengers = new List<Passenger>();

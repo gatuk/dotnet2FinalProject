@@ -194,6 +194,7 @@ namespace PresentationLayer
         {
             FrmPassenger frmPassenger = new FrmPassenger();
             frmPassenger.ShowDialog();
+            showCustomerData();
         }
     }
 }
