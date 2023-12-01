@@ -330,5 +330,31 @@ AS
 		INSERT INTO Passenger
 			(FlightID,FirstName, LastName, SeatNumber,Email, Phone, Address, City, State, ZipCode,IsCheckedIn,IsMinor,IsSpecialNeeds,Active)
 		Values(@FlightID,@FirstName,@LastName,@SeatNumber,@Email,@PhoneNumber,@Address,@City,@State,@ZipCode,@IsCheckedIn,@IsMinor,@IsSpecialNeeds, 			@Active)
+		return @@ROWCOUNT
+	END
+GO
+print '' print '*** Creating sp_update_passenger ***'
+GO
+CREATE PROCEDURE [dbo].[sp_update_passenger]
+(@PassengerID int,@FlightID int,@FirstName VARCHAR(255),@LastName VARCHAR(255),@SeatNumber VARCHAR(255),@Email VARCHAR(255),@PhoneNumber VARCHAR(255),@Address VARCHAR(255),@City VARCHAR(255),@State VARCHAR(255),@ZipCode int,@IsCheckedIn bit,@IsMinor bit,@IsSpecialNeeds bit,@Active bit)
+AS 	
+	BEGIN
+		UPDATE Passenger
+		SET	FlightID= @FlightID,
+			FirstName = @FirstName,
+			LastName= @LastName,
+			SeatNumber= @SeatNumber,
+			Email = @Email,
+			Phone= @PhoneNumber,
+			Address= @Address,
+			City= @City,
+			State= @State,
+			ZipCode= @ZipCode,
+			IsCheckedIn= @IsCheckedIn,
+			IsMinor=@IsMinor,
+			IsSpecialNeeds= @IsSpecialNeeds,
+			Active= @Active
+		WHERE 	PassengerID = @PassengerID
+	return @@ROWCOUNT
 	END
 GO

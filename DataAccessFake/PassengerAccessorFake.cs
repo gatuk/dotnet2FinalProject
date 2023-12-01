@@ -94,6 +94,11 @@ namespace DataAccessFakes
 
         }
 
+        public int updatePassenger(Passenger passenger)
+        {
+            throw new NotImplementedException();
+        }
+
         public int UpdatePasswordHash(string email, string oldPasswordHash, string newPasswordHash)
         {
             int rows = 0;

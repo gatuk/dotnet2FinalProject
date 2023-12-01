@@ -6,5 +6,6 @@ namespace LogicLayer
     {
         public int addPassenger(Passenger passenger);
         public List<Passenger> getAllPassengers();
+        public int updatePassenger(Passenger passenger);
     }
 }

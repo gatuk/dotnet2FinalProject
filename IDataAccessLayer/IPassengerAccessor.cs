@@ -14,7 +14,8 @@ namespace DataAccessInterfaces
         public List<Passenger> selectAllPassengers();
         public PassengerVM SelectPassengerVMByEmail(string email);
 		public List<string> SelectRolesByUser(int employeeID);
-		public int UpdatePasswordHash(string email, string oldPasswordHash, string newPasswordHash);
+        public int updatePassenger(Passenger passenger);
+        public int UpdatePasswordHash(string email, string oldPasswordHash, string newPasswordHash);
 	}
 
 }

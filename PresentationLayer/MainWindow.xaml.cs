@@ -196,5 +196,14 @@ namespace PresentationLayer
             frmPassenger.ShowDialog();
             showCustomerData();
         }
+
+        private void dgCustomers_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            Passenger passenger = new Passenger();
+            passenger = (Passenger) dgCustomers.SelectedItem;
+            FrmPassenger frmPassenger = new FrmPassenger(passenger);
+            frmPassenger.ShowDialog();
+            showCustomerData();
+        }
     }
 }

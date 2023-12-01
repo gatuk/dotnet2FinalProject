@@ -25,6 +25,7 @@ namespace PresentationLayer
         private Passenger passenger;
         private IFlightManager flightManger;
         private Flight flight;
+        private bool isUpdate;
 
         public FrmPassenger()
         {
@@ -34,6 +35,38 @@ namespace PresentationLayer
             flightManger = new FlightManager();
             flight = new Flight();
             fillOutCombos();
+            isUpdate = false;
+        }
+
+        public FrmPassenger(Passenger passenger)
+        {
+            InitializeComponent();
+            passengerManager = new PassengerManager();
+            this.passenger = passenger;
+            flightManger = new FlightManager();
+            flight = new Flight();
+            fillOutCombos();
+            fillFormByPassengerData();
+            isUpdate = true;
+        }
+
+        private void fillFormByPassengerData()
+        {
+            txtFirstname.Text = passenger.FirstName;
+            txtLastname.Text = passenger.LastName;
+            txtEmail.Text = passenger.Email;
+            txtPhoneNumber.Text = passenger.PhoneNumber;
+            txtAddress.Text = passenger.Address;
+            txtCity.Text = passenger.City;
+            txtState.Text = passenger.State;
+            txtSeatNumber.Text = passenger.SeatNumber;
+            txtZipcode.Text = passenger.ZipCode.ToString();
+            comboFlightID.SelectedItem = passenger.FlightID;
+            cbIsCheckIN.IsChecked = passenger.IsCheckedIn;
+            cbIsMinor.IsChecked = passenger.IsMinor;
+            cbSpecialNeed.IsChecked = passenger.IsSpecialNeeds;
+            cbActive.IsChecked = passenger.Active;
+
         }
 
         private void fillOutCombos()
@@ -68,7 +101,15 @@ namespace PresentationLayer
             passenger.IsMinor = cbIsMinor.IsChecked == true;
             passenger.IsSpecialNeeds = cbSpecialNeed.IsChecked == true;
             passenger.Active = cbActive.IsChecked == true;
-            result = passengerManager.addPassenger(passenger);
+            if (isUpdate == false)
+            {
+                result = passengerManager.addPassenger(passenger);
+            }
+            else
+            {
+                result = passengerManager.updatePassenger(passenger);
+            }
+            
 
             if (result == 0)
             {

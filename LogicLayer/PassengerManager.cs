@@ -34,5 +34,12 @@ namespace LogicLayer
 			passengers = _passengerAccessor.selectAllPassengers();
 			return passengers;
         }
+
+        public int updatePassenger(Passenger passenger)
+        {
+			int result = 0;
+			result = _passengerAccessor.updatePassenger(passenger);
+			return result;
+        }
     }
 }
