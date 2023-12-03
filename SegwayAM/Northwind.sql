@@ -90,6 +90,7 @@ CREATE TABLE  [dbo].[Flight] (
     [ArrivalDateTime] [DATETIME] NOT NULL,
     [AvailableSeats] [int] NOT NULL DEFAULT 0,
     [Price] [Decimal] Not null default 0.0,	
+	[Active] [bit] DEFAULT  1,
     CONSTRAINT CHK_AvailableSeats CHECK (AvailableSeats >= 0),
     CONSTRAINT [fk_DepartureAirport] FOREIGN KEY ([DepartureAirport]) REFERENCES Airport (AirportCode),
     CONSTRAINT [fk_ArrivalAirport] FOREIGN KEY ([ArrivalAirport]) REFERENCES Airport (AirportCode)
@@ -267,9 +268,9 @@ CREATE PROCEDURE [dbo].[sp_insert_flight]
 AS 	
 	BEGIN
 		INSERT INTO [dbo].[Flight]
-		([FlightNumber],[Airline],[DepartureAirport],[ArrivalAirport],[DepartureDateTime],[ArrivalDateTime],[AvailableSeats])
+		([FlightNumber],[Airline],[DepartureAirport],[ArrivalAirport],[DepartureDateTime],[ArrivalDateTime],[AvailableSeats],[Price])
 	VALUES
-		(@FlightNumber, @Airline,@Departure,@Destination,@DepartureTime,@ArrivalTime, @AvailableSeats)
+		(@FlightNumber, @Airline,@Departure,@Destination,@DepartureTime,@ArrivalTime, @AvailableSeats,@Price)
 	return @@ROWCOUNT
 	END
 GO
@@ -308,7 +309,9 @@ CREATE PROCEDURE [dbo].[sp_delete_flight]
 (@FlightId [int])
 AS 	
 	BEGIN
-		DELETE FROM [dbo].[Flight] WHERE [FlightID] = @FlightId;
+		UPDATE [dbo].[Flight] 
+		SET Active = 0
+		WHERE [FlightID] = @FlightId;
 	return @@ROWCOUNT
 	END
 GO
