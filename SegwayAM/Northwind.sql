@@ -34,7 +34,8 @@ GO
 CREATE TABLE Users (
     UserID INT IDENTITY(100000, 1) NOT NULL,
     Username NVARCHAR(50) NOT NULL UNIQUE,
-    Password NVARCHAR(255) NOT NULL,
+    Password NVARCHAR(255) NOT NULL
+	DEFAULT '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8',
     Role NVARCHAR(50) NOT NULL,
     Active bit default 1,
   CONSTRAINT [pk_UserID] PRIMARY KEY([UserID]),
@@ -45,11 +46,11 @@ GO
 print '' print '*** inserting user test records ***'
 GO
 INSERT INTO [dbo].[Users]
-([Username],[Password],[Role])
+([Username],[Role])
 	VALUES
-		('user1', 'password','Admin'),
-		('user2', 'password','AirlineStaff'),
-		('user3', 'password','Customer')
+		('user1','Admin'),
+		('user2','AirlineStaff'),
+		('user3','Customer')
 
 
 

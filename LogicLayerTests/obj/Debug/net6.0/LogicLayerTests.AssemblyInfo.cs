@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LogicLayerTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e3917da2a8bdd4ecfe423abdc2f53f047a6dc195")]
 [assembly: System.Reflection.AssemblyProductAttribute("LogicLayerTests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LogicLayerTests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

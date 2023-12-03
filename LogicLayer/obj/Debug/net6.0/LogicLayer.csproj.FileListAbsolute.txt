@@ -22,10 +22,12 @@ C:\Users\egish\source\repos\FlightPlanner\LogicLayer\obj\Debug\net6.0\ref\LogicL
 D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\LogicLayer\bin\Debug\net6.0\LogicLayer.deps.json
 D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\LogicLayer\bin\Debug\net6.0\LogicLayer.dll
 D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\LogicLayer\bin\Debug\net6.0\LogicLayer.pdb
+D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\LogicLayer\bin\Debug\net6.0\DataAccessFakes.dll
 D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\LogicLayer\bin\Debug\net6.0\DataAccessInterfaces.dll
 D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\LogicLayer\bin\Debug\net6.0\DataAccessLayer.dll
 D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\LogicLayer\bin\Debug\net6.0\DataObjects.dll
 D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\LogicLayer\bin\Debug\net6.0\LogicLayerInterfaces.dll
+D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\LogicLayer\bin\Debug\net6.0\DataAccessFakes.pdb
 D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\LogicLayer\bin\Debug\net6.0\DataAccessLayer.pdb
 D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\LogicLayer\bin\Debug\net6.0\DataObjects.pdb
 D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\LogicLayer\bin\Debug\net6.0\DataAccessInterfaces.pdb
@@ -41,5 +43,3 @@ D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\LogicLayer\obj\Debug\n
 D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\LogicLayer\obj\Debug\net6.0\refint\LogicLayer.dll
 D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\LogicLayer\obj\Debug\net6.0\LogicLayer.pdb
 D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\LogicLayer\obj\Debug\net6.0\ref\LogicLayer.dll
-D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\LogicLayer\bin\Debug\net6.0\DataAccessFakes.dll
-D:\Awaab\Kirkwood\Tutor\Dotnet2\Gishe\dotnet2FinalProject\LogicLayer\bin\Debug\net6.0\DataAccessFakes.pdb

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DataAccessFakes")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6bdc87470ed6602d7ce3d2d783a4cd77f393feeb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e3917da2a8bdd4ecfe423abdc2f53f047a6dc195")]
 [assembly: System.Reflection.AssemblyProductAttribute("DataAccessFakes")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DataAccessFakes")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
