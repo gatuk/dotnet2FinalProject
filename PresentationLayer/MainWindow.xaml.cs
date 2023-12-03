@@ -15,6 +15,7 @@ using System.Windows.Shapes;
 using LogicLayer;
 using LogicLayerInterfaces;
 using DataObjects;
+using System.Data;
 
 namespace PresentationLayer
 {
@@ -39,14 +40,33 @@ namespace PresentationLayer
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
-            if (!isDataValid())
-            {
-                return;
+            if (btnLogin.Content.ToString() == "Login") {
+                if (!isDataValid())
+                {
+                    return;
+                }
+                string role = "";
+                role = loginManager.verifyUser(txtUserName.Text, txtPassword.Password);
+                lblLoginMessage.Content = role;
+                displayGridByRole(role);
+                btnLogin.Content = "logout";
+                lblUserName.Visibility = Visibility.Hidden;
+                lblPassword.Visibility = Visibility.Hidden;
+                txtUserName.Visibility = Visibility.Hidden;
+                txtPassword.Visibility = Visibility.Hidden;
             }
-            string role = "";
-            role = loginManager.verifyUser(txtUserName.Text, txtPassword.Password);
-            lblLoginMessage.Content = role;
-            displayGridByRole(role);
+            else
+            {
+                btnLogin.Content = "Login";
+                lblUserName.Visibility = Visibility.Visible; 
+                lblPassword.Visibility = Visibility.Visible;
+                txtUserName.Visibility = Visibility.Visible;
+                txtPassword.Visibility = Visibility.Visible;
+                txtUserName.Text = "";
+                txtPassword.Password = "";
+                displayGridByRole("not verify");
+            }
+           
         }
 
         private void displayGridByRole(string role)
