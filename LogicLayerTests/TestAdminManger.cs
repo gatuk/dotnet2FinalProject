@@ -56,5 +56,13 @@ namespace LogicLayerTests
             int actual = adminManager.addUser(user);
             Assert.That(actual, Is.EqualTo(expect));
         }
+
+        [Test]
+        public void TestDeleteUser()
+        {
+            int expect = 1;
+            int actual = adminManager.deleteUser(users[0]);
+            Assert.That(actual, Is.EqualTo(expect));
+        }
     }
 }

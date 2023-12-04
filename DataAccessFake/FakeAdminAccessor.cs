@@ -22,7 +22,9 @@ namespace DataAccessFakes
 
         public int deleteUser(User? user)
         {
-            throw new NotImplementedException();
+            int result = users.Count;
+            users.Remove(user);
+            return result - users.Count;
         }
 
         public int insertUser(User user)
