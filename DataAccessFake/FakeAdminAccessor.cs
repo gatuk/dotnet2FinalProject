@@ -47,9 +47,21 @@ namespace DataAccessFakes
            return users;
         }
 
-        public int updateUser(User user)
+        public int updateUser(User oldUser)
         {
-            throw new NotImplementedException();
+            int result = 0;
+            foreach (User user in users)
+            {
+                if (user.UserId == oldUser.UserId)
+                {
+                    user.UserName = oldUser.UserName;
+                    user.Password = oldUser.Password;
+                    user.Role = oldUser.Role;
+                    result = 1;
+                    break;
+                }
+            }
+            return result;
         }
     }
 }

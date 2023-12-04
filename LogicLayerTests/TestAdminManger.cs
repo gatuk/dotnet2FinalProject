@@ -83,5 +83,14 @@ namespace LogicLayerTests
             int actual = adminManager.getRoles().Count;
             Assert.That(actual, Is.EqualTo(expect));
         }
+        [Test]
+        public void TestUpdateUser()
+        {
+            User user = users[0];
+            user.Password = "Test";
+            int expect = 1;
+            int actual = adminManager.updateUser(user);
+            Assert.That(actual, Is.EqualTo(expect));
+        }
     }
 }
