@@ -12,7 +12,15 @@ namespace LogicLayer
 {
     public class AdminManager : AdminManagerInterface
     {
-        private AdminAccessorInterface adminAccessor = new AdminAccessor();
+        private AdminAccessorInterface adminAccessor;
+        public AdminManager()
+        {
+            this.adminAccessor = new AdminAccessor();
+        }
+        public AdminManager(AdminAccessorInterface adminAccessor)
+        {
+            this.adminAccessor = adminAccessor;
+        }
 
         public int addUser(User user)
         {
