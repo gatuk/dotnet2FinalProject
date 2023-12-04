@@ -11,13 +11,16 @@ namespace DataAccessFakes
     public class FakeAdminAccessor : AdminAccessorInterface
     {
         private List<User> users;
+        private List<string> roles;
         public FakeAdminAccessor()
         {
             this.users = new List<User>();
+            this.roles = new List<string>();
         }
-        public FakeAdminAccessor(List<User> users)
+        public FakeAdminAccessor(List<User> users, List<string> roles)
         {
             this.users = users;
+            this.roles = roles;
         }
 
         public int deleteUser(User? user)
@@ -36,12 +39,12 @@ namespace DataAccessFakes
 
         public List<string> selectRoles()
         {
-            throw new NotImplementedException();
+            return roles;
         }
 
         public List<User> selectUsers()
         {
-            throw new NotImplementedException();
+           return users;
         }
 
         public int updateUser(User user)

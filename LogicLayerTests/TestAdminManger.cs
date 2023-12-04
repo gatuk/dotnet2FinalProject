@@ -13,23 +13,28 @@ namespace LogicLayerTests
         private AdminManagerInterface adminManager;
         private AdminAccessorInterface adminAccessor;
         private List<User> users;
+        private List<string> roles;
         [SetUp]
         public void Setup()
         {
             adminManager = new AdminManager();
             adminAccessor = new AdminAccessor();
+            roles = new List<string>();
+            roles.Add("admin");
+            roles.Add("Manager");
+            roles.Add("Customer");
             users = new List<User>();
-            users.Add(createUser("user1","Admin"));
-            users.Add(createUser("user2", "Manager"));
-            users.Add(createUser("user3", "Customer"));
-            users.Add(createUser("user4", "Admin"));
-            users.Add(createUser("user5", "Manager"));
-            users.Add(createUser("user6", "Admin"));
-            users.Add(createUser("user7", "Customer"));
-            users.Add(createUser("user8", "Admin"));
-            users.Add(createUser("user9", "Manager"));
-            users.Add(createUser("user10", "Customer"));
-            adminAccessor = new FakeAdminAccessor(users);
+            users.Add(createUser("user1", roles[0]));
+            users.Add(createUser("user2", roles[1]));
+            users.Add(createUser("user3", roles[2]));
+            users.Add(createUser("user4", roles[0]));
+            users.Add(createUser("user5", roles[1]));
+            users.Add(createUser("user6", roles[2]));
+            users.Add(createUser("user7", roles[0]));
+            users.Add(createUser("user8", roles[1]));
+            users.Add(createUser("user9", roles[2]));
+            users.Add(createUser("user10", roles[0]));
+            adminAccessor = new FakeAdminAccessor(users,roles);
             adminManager = new AdminManager(adminAccessor);
         }
 
@@ -62,6 +67,20 @@ namespace LogicLayerTests
         {
             int expect = 1;
             int actual = adminManager.deleteUser(users[0]);
+            Assert.That(actual, Is.EqualTo(expect));
+        }
+        [Test]
+        public void TestGetAllUsers()
+        {
+            int expect = 10;
+            int actual = adminManager.getAllUsers().Count;
+            Assert.That(actual, Is.EqualTo(expect));
+        }
+        [Test]
+        public void TestGetRoles()
+        {
+            int expect = roles.Count;
+            int actual = adminManager.getRoles().Count;
             Assert.That(actual, Is.EqualTo(expect));
         }
     }
