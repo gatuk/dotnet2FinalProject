@@ -12,11 +12,14 @@ namespace DataAccessFakes
     {
         private List<User> users;
         private List<string> roles;
+        private List<Flight> flights;
+
         public FakeAdminAccessor()
         {
             this.users = new List<User>();
             this.roles = new List<string>();
         }
+
         public FakeAdminAccessor(List<User> users, List<string> roles)
         {
             this.users = users;

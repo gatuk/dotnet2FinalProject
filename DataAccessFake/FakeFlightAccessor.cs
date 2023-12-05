@@ -9,14 +9,25 @@ namespace DataAccessFakes
 {
     public class FakeFlightAccessor : IFlightAccessor
     {
+        private List<Flight> flights;
+
+        public FakeFlightAccessor(List<Flight> flights)
+        {
+            this.flights = flights;
+        }
+
         public int deleteFlight(Flight flight)
         {
-            throw new NotImplementedException();
+            int result = flights.Count;
+            flights.Remove(flight);
+            return result - flights.Count;
         }
 
         public int insert(Flight flight)
         {
-            throw new NotImplementedException();
+            int result = flights.Count;
+            flights.Add(flight);
+            return flights.Count - result;
         }
 
         public List<string> selectAllAirportCode()
@@ -74,9 +85,25 @@ namespace DataAccessFakes
             throw new NotImplementedException();
         }
 
-        public int updateFlight(Flight flight)
+        public int updateFlight(Flight oldFlight)
         {
-            throw new NotImplementedException();
+            int result = 0;
+            foreach (Flight flight in flights)
+            {
+                if (flight.FlightId == oldFlight.FlightId) {
+                    flight.FlightNumber = oldFlight.FlightNumber;
+                    flight.DepartureTime = oldFlight.DepartureTime;
+                    flight.Departure = oldFlight.Departure;
+                    flight.Destination = oldFlight.Destination;
+                    flight.ArrivalTime = oldFlight.ArrivalTime;
+                    flight.AvailableSeats = oldFlight.AvailableSeats;
+                    flight.Price = oldFlight.Price;
+                    flight.Airline = oldFlight.Airline;
+                    result = 1;
+                    break;
+                }
+            }
+            return result;
         }
     }
 }

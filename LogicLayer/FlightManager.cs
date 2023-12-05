@@ -12,6 +12,11 @@ namespace LogicLayer
             flightAccessor = new FlightAccessor();
         }
 
+        public FlightManager(IFlightAccessor flightAccessor)
+        {
+            this.flightAccessor = flightAccessor;
+        }
+
         public int addNewFlight(Flight flight)
         {
             int result = 0;
