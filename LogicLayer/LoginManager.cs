@@ -13,7 +13,17 @@ namespace LogicLayer
 {
     public class LoginManager : LoginManagerInterface
     {
-        private LoginAccessorInterface loginAccessor = new LoginAccessor();
+        private LoginAccessorInterface loginAccessor;
+
+        public LoginManager()
+        {
+            loginAccessor = new LoginAccessor();
+        }
+
+        public LoginManager(LoginAccessorInterface loginAccessor)
+        {
+            this.loginAccessor = loginAccessor;
+        }
 
         public string verifyUser(string username, string password)
         {

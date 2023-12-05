@@ -10,10 +10,21 @@ namespace DataAccessFakes
     public class FakeFlightAccessor : IFlightAccessor
     {
         private List<Flight> flights;
+        private List<string> airportCodes;
 
         public FakeFlightAccessor(List<Flight> flights)
         {
             this.flights = flights;
+            airportCodes = new List<string>();
+            generateAirportCodes();
+        }
+
+        private void generateAirportCodes()
+        {
+            for (int i = 1; i < 11; i++)
+            {
+                airportCodes.Add(i.ToString());
+            }
         }
 
         public int deleteFlight(Flight flight)
@@ -32,12 +43,12 @@ namespace DataAccessFakes
 
         public List<string> selectAllAirportCode()
         {
-            throw new NotImplementedException();
+            return airportCodes;
         }
 
         public List<Flight> selectAllFlights()
         {
-            throw new NotImplementedException();
+            return flights;
         }
 
         public List<Flight> SelectFlightsByAirline()

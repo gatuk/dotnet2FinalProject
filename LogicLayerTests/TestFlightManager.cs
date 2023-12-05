@@ -75,21 +75,19 @@ namespace LogicLayerTests
             int actual = flightManager.editFlight(flight);
             Assert.That(actual, Is.EqualTo(expect));
         }
-        //[Test]
-        //public void TestGetRoles()
-        //{
-        //    int expect = roles.Count;
-        //    int actual = adminManager.getRoles().Count;
-        //    Assert.That(actual, Is.EqualTo(expect));
-        //}
-        //[Test]
-        //public void TestUpdateUser()
-        //{
-        //    User user = flights[0];
-        //    user.Password = "Test";
-        //    int expect = 1;
-        //    int actual = adminManager.updateUser(user);
-        //    Assert.That(actual, Is.EqualTo(expect));
-        //}
+        [Test]
+        public void TestGetAllAirCodes()
+        {
+            int expect = 10;
+            int actual = flightManager.getAllAirPortCodes().Count;
+            Assert.That(actual, Is.EqualTo(expect));
+        }
+        [Test]
+        public void TestGetAllFlights()
+        {
+            int expect = 10;
+            int actual = flightManager.getAllFlights().Count;
+            Assert.That(actual, Is.EqualTo(expect));
+        }
     }
 }

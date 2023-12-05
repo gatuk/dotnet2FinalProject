@@ -95,7 +95,7 @@ namespace DataAccessLayer
             return passengers;
         }
 
-        public PassengerVM SelectPassengerVMByEmail(string email)
+        public Passenger SelectPassengerVMByEmail(string email)
         {
             throw new NotImplementedException();
         }

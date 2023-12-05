@@ -6,31 +6,35 @@ namespace DataAccessFakes
     public class passengerAccessorFake : IPassengerAccessor
     {
         // create a few fake passenger for testing
-        private List<PassengerVM> fakePassengers = new List<PassengerVM>();
+        private List<Passenger> passengers ;
         private List<string> passwordHashes = new List<string>();
 
         public passengerAccessorFake()
         {
-            fakePassengers.Add(new PassengerVM()
+            passengers = new List<Passenger>();
+            passengers.Add(new Passenger()
             {
                 PassengerID = 1,
                 FlightID = 1,
                 FirstName = "John",
                 LastName = "Doe",
                 SeatNumber = "1A",
-                Email = "",
-                Roles = new List<string>()
+                Email = ""
             });
-            fakePassengers.Add(new PassengerVM()
+            passengers.Add(new PassengerVM()
             {
                 PassengerID = 2,
                 FlightID = 1,
                 FirstName = "Jane",
                 LastName = "Doe",
                 SeatNumber = "1B",
-                Email = "",
-                Roles = new List<string>()
+                Email = ""
             });
+        }
+
+        public passengerAccessorFake(List<Passenger> passengers)
+        {
+            this.passengers = passengers;
         }
 
         public int AuthenticateUserWithEmailAndPasswordHash(string email, string passwordHash)
@@ -38,10 +42,10 @@ namespace DataAccessFakes
             int numAuthenticated = 0;
 
             // check for employee records in the fake data
-            for (int i = 0; i < fakePassengers.Count; i++)
+            for (int i = 0; i < passengers.Count; i++)
             {
                 if (passwordHashes[i] == passwordHash &&
-                    fakePassengers[i].Email == email)
+                    passengers[i].Email == email)
                 {
                     numAuthenticated += 1;
                 }
@@ -52,19 +56,21 @@ namespace DataAccessFakes
 
         public int insertPassenger(Passenger passenger)
         {
-            throw new NotImplementedException();
+            int result = passengers.Count();
+            passengers.Add(passenger);
+            return passengers.Count() - result;
         }
 
         public List<Passenger> selectAllPassengers()
         {
-            throw new NotImplementedException();
+            return passengers;
         }
 
-        public PassengerVM SelectPassengerVMByEmail(string email)
+        public Passenger SelectPassengerVMByEmail(string email)
         {
-            PassengerVM pass = null;
+            Passenger pass = null;
 
-            foreach (var fakePassenger in fakePassengers)
+            foreach (var fakePassenger in passengers)
             {
                 if (fakePassenger.Email == email)
                 {
@@ -82,30 +88,53 @@ namespace DataAccessFakes
         {
             List<string> roles = new List<string>();
 
-            foreach (var fakePassenger in fakePassengers)
-            {
-                if (fakePassenger.PassengerID == PassengerID)
-                {
-                    roles = fakePassenger.Roles;
-                    break;
-                }
-            }
+            //foreach (var fakePassenger in passengers)
+            //{
+            //    if (fakePassenger.PassengerID == PassengerID)
+            //    {
+            //        roles = fakePassenger.Roles;
+            //        break;
+            //    }
+            //}
             return roles;
 
         }
 
         public int updatePassenger(Passenger passenger)
         {
-            throw new NotImplementedException();
+            int result = 0;
+            foreach (Passenger item in passengers)
+            {
+                if (passenger.PassengerID == item.PassengerID)
+                {
+                    item.FlightID = passenger.FlightID;
+                    item.FirstName = passenger.FirstName; 
+                    item.LastName = passenger.LastName;
+                    item.SeatNumber = passenger.SeatNumber;
+                    item.Email = passenger.Email;
+                    item.PhoneNumber = passenger.PhoneNumber;
+                    item.Address = passenger.Address;
+                    item.City = passenger.City;
+                    item.State = passenger.State;
+                    item.ZipCode = passenger.ZipCode;
+                    item.IsCheckedIn = passenger.IsCheckedIn;
+                    item.IsMinor = passenger.IsMinor;
+                    item.IsSpecialNeeds = passenger.IsSpecialNeeds;
+                    item.Active = passenger.Active;
+                    result = 1;
+                    break;
+                }
+            }
+            return result;
         }
 
         public int UpdatePasswordHash(string email, string oldPasswordHash, string newPasswordHash)
         {
             int rows = 0;
 
-            for (int i = 0; i < fakePassengers.Count; i++)
+            for (int i = 0; i < passengers.Count; i++)
             {
-                if (fakePassengers[i].Email == email)
+                if (passengers[i].Email == email)
                 {
                     if (passwordHashes[i] == oldPasswordHash)
                     {
