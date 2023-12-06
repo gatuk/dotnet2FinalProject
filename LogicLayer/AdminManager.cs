@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using DataAccessInterfaces;
@@ -25,6 +26,11 @@ namespace LogicLayer
         public int addUser(User user)
         {
             int result = 0;
+            if (user.Password != null)
+            {
+                user.Password = hashSHA256(user.Password);
+            }
+            
             result = adminAccessor.insertUser(user);
             return result;
         }
@@ -54,7 +60,28 @@ namespace LogicLayer
         public int updateUser(User user)
         {
             int result = 0;
+            if (user.Password != null)
+            {
+                user.Password = hashSHA256(user.Password);
+            }
             result = adminAccessor.updateUser(user);
+            return result;
+        }
+        private string hashSHA256(string source)
+        {
+            // defult password is newuser
+            string result = "";
+            byte[] data;
+            using (SHA256 sha256sha = SHA256.Create())
+            {
+                data = sha256sha.ComputeHash(Encoding.UTF8.GetBytes(source));
+            }
+            var s = new StringBuilder();
+            for (int i = 0; i < data.Length; i++)
+            {
+                s.Append(data[i].ToString("x2"));
+            }
+            result = s.ToString();
             return result;
         }
     }
